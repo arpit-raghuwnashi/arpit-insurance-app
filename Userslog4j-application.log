@@ -1,0 +1,1058 @@
+2021-04-01 17:03:25 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 17:03:25 INFO  SecurityController:55 - Username and Password :{} null   foo
+2021-04-01 17:03:25 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-01 17:03:30 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 17:03:30 INFO  SecurityController:55 - Username and Password :{} null   foo
+2021-04-01 17:03:30 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-01 17:04:22 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 17:04:22 INFO  SecurityController:55 - Username and Password :{} null   1234
+2021-04-01 17:04:22 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-01 17:05:14 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 17:05:14 INFO  SecurityController:55 - Username and Password :{} null   1234
+2021-04-01 17:05:14 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-01 17:05:19 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 17:05:19 INFO  SecurityController:55 - Username and Password :{} mukul@impetus.com   1234
+2021-04-01 17:05:19 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtdWt1bEBpbXBldHVzLmNvbSIsImV4cCI6MTYxNzMxMjkxOSwiaWF0IjoxNjE3Mjc2OTE5fQ.xohQvQJCneZMkDS9E11v68llwX3P0ZCPx66ZQKzz5gw
+
+2021-04-02 08:41:08 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:41:08 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:41:09 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:41:09 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:41:12 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:41:12 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:41:15 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:41:15 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:41:24 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:41:24 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:41:26 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:41:26 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:41:27 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:41:27 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:42:26 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:42:26 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:44:29 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:44:29 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:47:53 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:47:53 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:54:55 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:54:55 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:54:57 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:54:57 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:57:05 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:57:05 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 08:59:36 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 08:59:36 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 09:01:00 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:01:00 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 09:03:10 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:03:10 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 09:06:58 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:06:58 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com     admin@12345
+2021-04-02 09:06:58 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 09:08:11 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:08:11 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   admin@12345
+2021-04-02 09:10:21 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:10:21 INFO  SecurityController:55 - Username and Password :{} admin@gmail.com   Admin@123
+2021-04-02 09:11:36 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:11:36 INFO  SecurityController:55 - Username and Password :{} parul@gmail.com   Parul@123
+2021-04-02 09:15:36 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:15:36 INFO  SecurityController:55 - Username and Password :{} null   admin@12345
+2021-04-02 09:15:36 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 09:18:06 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:18:06 INFO  SecurityController:55 - Username and Password :{} null   admin@12345
+2021-04-02 09:18:06 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 09:20:19 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:20:19 INFO  SecurityController:55 - Username and Password :{} null   impetus
+2021-04-02 09:20:19 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 09:21:46 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:21:46 INFO  SecurityController:55 - Username and Password :{} impetus@gmail.com   impetus
+2021-04-02 09:25:57 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:25:57 INFO  SecurityController:55 - Username and Password :{} myapp@gmail.com   myapp
+2021-04-02 09:27:06 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:27:06 INFO  SecurityController:55 - Username and Password :{} myapp@gmail.com   myapp
+2021-04-02 09:58:25 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:58:25 INFO  SecurityController:55 - Username and Password :{} app@gmail.com   app
+2021-04-02 09:59:10 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 09:59:10 INFO  SecurityController:55 - Username and Password :{} app@gmail.com   app
+2021-04-02 10:08:16 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 10:08:16 INFO  SecurityController:55 - Username and Password :{} admin@gmail.com   admin@12345
+2021-04-02 10:08:17 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczNzQyOTYsImlhdCI6MTYxNzMzODI5Nn0.AC5R-k9FkaVDwl82ioywuK3tDegqe4QLYaO3EfnMwvQ
+2021-04-02 10:56:56 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 10:56:56 INFO  SecurityController:55 - Username and Password :{} admin@gmail.com   admin@12345
+2021-04-02 10:56:56 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczNzcyMTYsImlhdCI6MTYxNzM0MTIxNn0.m9VHTlHeL1vaeUAqESZNvk7BlncSbdZlQvmmf0au6Vk
+2021-04-02 11:12:31 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:12:31 INFO  SecurityController:55 - Username and Password :{} admin@gmail.com   admin
+2021-04-02 11:13:29 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:13:29 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 11:13:29 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczNzgyMDksImlhdCI6MTYxNzM0MjIwOX0.8tcLfQQv6lS1vE68VEjctkb6l8dkZ3Cwj5WxduMlbms
+2021-04-02 11:29:48 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:29:48 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 11:29:48 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczNzkxODgsImlhdCI6MTYxNzM0MzE4OH0.CNp9RqjThvv1WI0DGoig7n-pMaGhbWd08iN8_wILSSU
+2021-04-02 11:44:38 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:44:38 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 11:44:38 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczODAwNzgsImlhdCI6MTYxNzM0NDA3OH0.ttydvYwkEiE5g6TG510br8PCZ3LKq8MTz1rD4_hBZ3c
+2021-04-02 11:52:59 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:52:59 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 11:52:59 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczODA1NzksImlhdCI6MTYxNzM0NDU3OX0.6PVnV4sr59HHQJxANuuf7wxoIQ6gXgSZRcPJEJ2P8Lk
+2021-04-02 11:53:50 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:53:50 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 11:53:50 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczODA2MzAsImlhdCI6MTYxNzM0NDYzMH0.0hu4b9zpjDJ0wT4Pg1MVOps-X4DYQQsYfbgICtpmx4A
+2021-04-02 12:04:10 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 12:04:10 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 12:04:10 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczODEyNTAsImlhdCI6MTYxNzM0NTI1MH0.mUljOfVKvBTWwrSfza4ffK1R81XKIuBuMd3frCkFexk
+2021-04-02 12:13:47 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 12:13:47 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 12:13:47 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczODE4MjcsImlhdCI6MTYxNzM0NTgyN30.8YLViT9JjG2gr18keosLtOtSTLe6oeaVV9KalNj7N_I
+2021-04-02 12:15:51 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 12:15:51 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 12:15:51 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczODE5NTEsImlhdCI6MTYxNzM0NTk1MX0.YGa1Cw7Chy6k5mu2UTdqDnP2o_Paw3zQSd2ZwenC3wo
+2021-04-02 12:49:09 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 12:49:09 INFO  SecurityController:55 - Username and Password :{} nisdin@gmail.com    Nisdin123# 
+2021-04-02 12:50:15 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 12:50:15 INFO  SecurityController:55 - Username and Password :{} nisdin@gmail.com    Nisdin123# 
+2021-04-02 12:52:11 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 12:52:11 INFO  SecurityController:55 - Username and Password :{} nitin@gmail.com   nitin
+2021-04-02 12:52:11 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaXRpbkBnbWFpbC5jb20iLCJleHAiOjE2MTczODQxMzEsImlhdCI6MTYxNzM0ODEzMX0.VmxLnuks3DWWdv50FygnN3lCm_ku7ObkkAcABCCfIpw
+2021-04-02 13:53:16 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 13:53:16 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 13:53:16 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczODc3OTYsImlhdCI6MTYxNzM1MTc5Nn0.bkmO_Kvkm3f5pw1g4oNNz_r6qIkgwKHeMtS9kUlDFXE
+2021-04-02 13:55:21 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 13:55:21 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 13:55:21 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczODc5MjEsImlhdCI6MTYxNzM1MTkyMX0.fcdaK8lsRkIlmNZ8CSnr-_ZpHPTmz1n3M0t0uweScMc
+2021-04-02 15:19:41 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 15:19:41 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 15:19:41 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczOTI5ODEsImlhdCI6MTYxNzM1Njk4MX0.1ws43YzXfyLbmLiyIQdwVfX2ckeJ1Hrb8KEp_gB78FY
+2021-04-02 15:20:00 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 15:20:00 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 15:20:00 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczOTMwMDAsImlhdCI6MTYxNzM1NzAwMH0.w7L5w8YmKwBhMdS8bAOmytPaV9S_lV7gSQIMOpFlEMI
+2021-04-02 15:28:36 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 15:28:36 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 15:28:36 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczOTM1MTYsImlhdCI6MTYxNzM1NzUxNn0.pVSlFaqdO-KXtI3AMb976V62nQqAawaeIMvyJgJt2WU
+2021-04-02 15:32:05 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 15:32:05 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 15:32:05 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczOTM3MjUsImlhdCI6MTYxNzM1NzcyNX0.tPTZANxazsZ3fY8MUQuf-KUo7w2Q8z1RGniRjinZSgg
+2021-04-02 15:53:44 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 15:53:44 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 15:53:44 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczOTUwMjQsImlhdCI6MTYxNzM1OTAyNH0.aTCnnAjMjWjFUyWvqMlgHA-VU8H-tt3LigohoyC1WRo
+2021-04-02 16:10:06 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 16:10:06 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   rASHI@876
+2021-04-02 16:10:06 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 16:10:09 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 16:10:09 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   rASHI@876
+2021-04-02 16:10:09 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 16:10:19 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 16:10:19 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   rASHI@876
+2021-04-02 16:10:19 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 16:11:45 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 16:11:45 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Raashi@876
+2021-04-02 16:11:45 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 16:12:16 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 16:12:16 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@876
+2021-04-02 16:12:16 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTczOTYxMzYsImlhdCI6MTYxNzM2MDEzNn0.mWGFIBQjG-nzT8aTqgbk6357ZenQnwlJLmGYZWg8HJY
+2021-04-02 16:16:09 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 16:16:09 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 16:16:09 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczOTYzNjksImlhdCI6MTYxNzM2MDM2OX0.syhg-AWiD1Fn3nS2uAGgNkuBJ-ApXDlN7X3Baw-M-kU
+2021-04-02 16:16:09 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 16:16:09 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-02 16:16:09 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTczOTYzNjksImlhdCI6MTYxNzM2MDM2OX0.syhg-AWiD1Fn3nS2uAGgNkuBJ-ApXDlN7X3Baw-M-kU
+2021-04-05 08:16:59 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 08:16:59 INFO  SecurityController:55 - Username and Password :{} null   null
+2021-04-05 08:16:59 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-05 08:20:10 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 08:20:10 INFO  SecurityController:55 - Username and Password :{} impetus@gmail.com   impetus
+2021-04-05 08:20:10 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbXBldHVzQGdtYWlsLmNvbSIsImV4cCI6MTYxNzYyNzAxMCwiaWF0IjoxNjE3NTkxMDEwfQ.90yvp1G-Y8W-aBs7wUiZeXNeYDjDVQkuaHmiSh0KEb0
+2021-04-05 08:32:27 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 08:32:27 INFO  SecurityController:55 - Username and Password :{} impetus@gmail.com   impetus
+2021-04-05 08:32:27 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbXBldHVzQGdtYWlsLmNvbSIsImV4cCI6MTYxNzYyNzc0NywiaWF0IjoxNjE3NTkxNzQ3fQ.ZuxZGui4WE8RWczXWowFxtCIkdQrJA7z2pYi9tSiqjA
+2021-04-05 08:53:52 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 08:53:52 INFO  SecurityController:55 - Username and Password :{} impetus@gmail.com   impetus
+2021-04-05 08:53:52 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbXBldHVzQGdtYWlsLmNvbSIsImV4cCI6MTYxNzYyOTAzMiwiaWF0IjoxNjE3NTkzMDMyfQ._NTGveJl2Cx37k4rshpLhMb0wLjYLgxavgmXSgxAL6A
+2021-04-05 09:47:37 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 09:47:37 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-05 09:47:37 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTc2MzIyNTcsImlhdCI6MTYxNzU5NjI1N30.6_wKiKDTsjL1s83JN34fc6NQhaDPQgLM9mI8yVJQo7o
+2021-04-05 10:47:24 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 10:47:24 INFO  SecurityController:55 - Username and Password :{} null   impetus
+2021-04-05 10:47:24 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-05 10:56:11 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 10:56:11 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-05 10:56:11 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTc2MzYzNzEsImlhdCI6MTYxNzYwMDM3MX0.dCS0_rE6K8Q-rZPqCvcfvrJJpQPT4yGRekyXstKylg0
+2021-04-05 12:19:28 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 12:19:28 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-05 12:19:28 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTc2NDEzNjgsImlhdCI6MTYxNzYwNTM2OH0.HkHWUbEAUj3zzYQR2SWhAmB2crY-m-9KH6WYRZ5yieU
+2021-04-05 12:29:11 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 12:29:11 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-05 12:29:11 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTc2NDE5NTEsImlhdCI6MTYxNzYwNTk1MX0._3shOgCtoWiTEHuu4fUFZ0sJFeVqEAzRofpbbJMdQFs
+2021-04-05 15:50:08 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 15:50:08 INFO  SecurityController:55 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-05 15:50:08 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTc2NTQwMDgsImlhdCI6MTYxNzYxODAwOH0.Lk6z5BN011tpQHSGPVdHGlPywPxVa7wwQqCHs7FSA6s
+
+2021-04-01 22:46:08 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 22:46:08 INFO  SecurityController:55 - Username and Password :{} joe@impetus.com   1234
+2021-04-01 23:08:54 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:08:54 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:12:27 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:12:27 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:13:46 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:13:46 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:14:54 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:14:54 INFO  SecurityController:55 - Username and Password :{} joe@impetus.com   1234
+2021-04-01 23:17:06 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:17:06 INFO  SecurityController:55 - Username and Password :{} ram@impetus.com   1234
+2021-04-01 23:19:56 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:19:56 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:25:41 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:25:41 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:25:41 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-01 23:30:02 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:30:02 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:33:11 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:33:11 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:45:22 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:45:22 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:48:07 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:48:07 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:48:14 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:48:14 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:48:15 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:48:15 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:48:17 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:48:17 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:48:26 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:48:26 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:49:00 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:49:00 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:49:14 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:49:14 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:53:52 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:53:52 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:54:01 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:54:01 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:55:26 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:55:26 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:55:46 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:55:46 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-01 23:55:59 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-01 23:55:59 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-02 00:18:59 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 00:18:59 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-02 00:18:59 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3MzM4OTM5LCJpYXQiOjE2MTczMDI5Mzl9.Ao-RbGV0lbbGAD9U6mwbDlRA95zhrZc6F3f0LC2Qe5E
+2021-04-02 00:19:18 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 00:19:18 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-02 00:19:18 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3MzM4OTU4LCJpYXQiOjE2MTczMDI5NTh9.EHu1xEczYPbGjwlQfp4gsGUGW21ki-_Kn3Kts0HI9wM
+2021-04-02 10:38:09 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 10:38:09 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-02 10:38:09 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3Mzc2MDg5LCJpYXQiOjE2MTczNDAwODl9.0PbOnyhqo0m4PL00fuwp19koSCbVLMe1N6kLc1OefGg
+2021-04-02 11:08:18 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:08:18 INFO  SecurityController:55 - Username and Password :{} fraaas   1234567
+2021-04-02 11:08:18 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 11:08:19 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:08:19 INFO  SecurityController:55 - Username and Password :{} fraaas   1234567
+2021-04-02 11:08:19 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 11:47:45 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:47:45 INFO  SecurityController:55 - Username and Password :{} frank   12345
+2021-04-02 11:47:45 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 11:48:06 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:48:06 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-02 11:48:06 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3MzgwMjg2LCJpYXQiOjE2MTczNDQyODZ9.xQ-gK6UFIPNf5vvY8j5H7Dl0rZDnjtkx7Wlb--22PZk
+2021-04-02 11:48:18 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:48:18 INFO  SecurityController:55 - Username and Password :{} fran   1234567
+2021-04-02 11:48:18 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-02 11:48:32 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-02 11:48:32 INFO  SecurityController:55 - Username and Password :{} fran   1234567
+2021-04-02 11:48:32 ERROR SecurityController:59 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-05 12:20:30 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 12:20:30 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-05 12:20:30 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3NjQxNDMwLCJpYXQiOjE2MTc2MDU0MzB9.8yWzzJv-qyTLVoUH0iQbO5P0NYq_7-YmsQnjBqgq5nY
+2021-04-05 12:40:22 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 12:40:22 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-05 12:40:22 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3NjQyNjIyLCJpYXQiOjE2MTc2MDY2MjJ9.UBIk8RoiV0HlYQHsY6bO4DM9B4SZSdQGhmTBysdzGxU
+2021-04-05 12:42:28 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 12:42:28 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-05 12:42:28 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3NjQyNzQ4LCJpYXQiOjE2MTc2MDY3NDh9.lj0EdlKqP6J2JD46BxMi68BLQ4o3pi_4TLaOcnpsP6o
+2021-04-05 16:00:14 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:00:14 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:00:18 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:00:18 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:01:38 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:01:38 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:01:50 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:01:50 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234
+2021-04-05 16:01:52 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:01:52 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234
+2021-04-05 16:02:28 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:02:28 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:02:32 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:02:32 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:02:32 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:02:32 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:02:32 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:02:32 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:02:50 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:02:50 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:03:18 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:03:18 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-05 16:03:18 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3NjU0Nzk4LCJpYXQiOjE2MTc2MTg3OTh9.2GrWDQavgO-KCRAFmdOItL32RXu5Fcuk0sRCOSIAiZk
+2021-04-05 16:03:42 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:03:42 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:05:16 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:05:16 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-05 16:06:06 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-05 16:06:06 INFO  SecurityController:55 - Username and Password :{} mukul@abc.com   1234567
+2021-04-06 10:21:18 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-06 10:21:18 INFO  SecurityController:55 - Username and Password :{} frank@abc.com   1234567
+2021-04-06 10:21:18 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua0BhYmMuY29tIiwiZXhwIjoxNjE3NzIwNjc4LCJpYXQiOjE2MTc2ODQ2Nzh9.UkU2o09BibHt21DzlU6tXWUoNstmlEoqAsDCPiG3oFQ
+2021-04-06 10:38:17 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-06 10:38:17 INFO  SecurityController:55 - Username and Password :{} pedri@barca.tv   1234567
+2021-04-06 10:38:18 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-06 10:38:18 INFO  SecurityController:55 - Username and Password :{} pedri@barca.tv   1234567
+2021-04-06 10:42:36 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-06 10:42:36 INFO  SecurityController:55 - Username and Password :{} pedri@barca.tv   1234567
+2021-04-06 10:42:36 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyaUBiYXJjYS50diIsImV4cCI6MTYxNzcyMTk1NiwiaWF0IjoxNjE3Njg1OTU2fQ.d4PhOWVZTw1ZiOOANsp1qTWtcVk4HZguUZgh5L_hV9I
+2021-04-06 16:42:11 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-06 16:42:11 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@1234
+2021-04-06 16:42:11 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTc3NDM1MzEsImlhdCI6MTYxNzcwNzUzMX0.AAKk6Jezru3o2TNFncMK4J4QF2LsMi40pLTbTGwzReE
+2021-04-06 16:44:44 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-06 16:44:44 INFO  SecurityController:55 - Username and Password :{} rashi@gmail.com   Rashi@1234
+2021-04-06 16:44:44 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaUBnbWFpbC5jb20iLCJleHAiOjE2MTc3NDM2ODQsImlhdCI6MTYxNzcwNzY4NH0.NeNHS8msnC03MIYTI4EiUStutR5zlkMgRE8PbwNdKbA
+
+2021-04-07 16:50:52 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-07 16:50:52 INFO  SecurityController:55 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 16:50:52 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4MzA0NTIsImlhdCI6MTYxNzc5NDQ1Mn0.IhfiIFLNR6Rflxh-RhmNi7nGm5DMPM42B8QVbAkmO9I
+2021-04-07 18:34:49 INFO  SecurityController:53 - Inside gererateToken Method in SecurityRestImpl
+2021-04-07 18:34:49 INFO  SecurityController:55 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 18:34:49 DEBUG SecurityController:65 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4MzY2ODksImlhdCI6MTYxNzgwMDY4OX0.NBHXIyJHvcGPO_c0wrQBCKvG6spuwJrPviuYv6gC1Vs
+2021-04-07 19:29:08 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 19:29:08 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 19:29:08 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4Mzk5NDgsImlhdCI6MTYxNzgwMzk0OH0.hEHLwkurhFn3L2V5P5Sou68OnR6Eah20aOpQswuTdok
+2021-04-07 19:54:51 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 19:54:51 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   2334
+2021-04-07 19:54:51 ERROR SecurityController:60 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-07 19:54:56 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 19:54:56 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 19:54:56 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NDE0OTYsImlhdCI6MTYxNzgwNTQ5Nn0.q7pn8Pdc0M24PsnrRuWya50DbRldBWo07XZM-6PBxyo
+2021-04-07 20:25:39 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 20:25:39 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 20:25:39 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NDMzMzksImlhdCI6MTYxNzgwNzMzOX0._Fm5h5UjwPds9OdvwfeUn0ZDOmit2qqmMrj3Ec9QncE
+2021-04-07 20:45:47 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 20:45:47 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 20:45:47 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NDQ1NDcsImlhdCI6MTYxNzgwODU0N30.EXQQa1hIpdbfXRzsw67AYNnGLyE0n2fp7bbPyGxRsCI
+2021-04-07 20:47:04 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 20:47:04 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 20:47:04 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NDQ2MjQsImlhdCI6MTYxNzgwODYyNH0.jvxQmIRKYB5lLXwlwqFoMEEdMbSjinjSK8W9GOdMuR8
+2021-04-07 21:17:30 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 21:17:30 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 21:17:30 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NDY0NTAsImlhdCI6MTYxNzgxMDQ1MH0.CcGKsKf93kHs3g9_pt21Ph9oMQyADZO3vgqoT8mG17c
+2021-04-07 21:48:47 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 21:48:47 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 21:48:47 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NDgzMjcsImlhdCI6MTYxNzgxMjMyN30.yj9uFa_Qy_0vq9PomPW3iEjBZSvhYpfeu8Bq2MkF8oY
+2021-04-07 22:20:08 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 22:20:08 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 22:20:08 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NTAyMDgsImlhdCI6MTYxNzgxNDIwOH0.O7EynZxKkN4NF0taooqasyLyeTwt1aadTgupyMaGjgU
+2021-04-07 22:50:36 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 22:50:36 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 22:50:36 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NTIwMzYsImlhdCI6MTYxNzgxNjAzNn0.s5b54aJpq4cfJOdgZIAK0bY8VzaYogmHFYHUAqw43UM
+2021-04-07 23:21:44 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 23:21:44 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 23:21:44 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NTM5MDQsImlhdCI6MTYxNzgxNzkwNH0.23g1xHS-d6aCfBsh1srbr2USuWrRJGE8zOmY19aDQ2k
+2021-04-07 23:52:18 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 23:52:18 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 23:52:18 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NTU3MzgsImlhdCI6MTYxNzgxOTczOH0.bRNMS_QQl_gjWX_SPqA8poPmPW5fuP9uMiplFetYYAs
+2021-04-07 23:52:39 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-07 23:52:39 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-07 23:52:39 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NTU3NTksImlhdCI6MTYxNzgxOTc1OX0.W7nBD25lF-ePpew0efr0cwPsSugyCTjwPt29KnduPzo
+2021-04-08 00:23:03 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-08 00:23:03 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-08 00:23:03 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NTc1ODMsImlhdCI6MTYxNzgyMTU4M30.s2Tui-bMC4aDNxLhblix2UbtvnSMrgb10CZ8ZIp1xDI
+2021-04-08 01:52:13 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-08 01:52:13 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-08 01:52:13 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc4NjI5MzMsImlhdCI6MTYxNzgyNjkzM30.QvWns8XAxc7cWsnEq6OJlVpZMW-QHaNTgzeDG1w9LZw
+<<<<<<< HEAD
+2021-04-08 12:52:51 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-08 12:52:51 INFO  SecurityController:56 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-08 12:52:51 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcHBhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2MTc5MDI1NzEsImlhdCI6MTYxNzg2NjU3MX0.fc3ITTtG9VCQASxhZ5QA1eKpgDr_CiWqNH87RDBQMS8
+2021-04-08 12:55:04 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-08 12:55:04 INFO  SecurityController:56 - Username and Password :{} appadmin@gmail.com   appadmin
+2021-04-08 12:55:04 ERROR SecurityController:60 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-08 12:59:02 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-08 12:59:02 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-08 12:59:02 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc5MDI5NDIsImlhdCI6MTYxNzg2Njk0Mn0._ykI-AfKrvLghoaMBUAYpTuSDF5q9SefkBt_1tRY8Eg
+2021-04-08 13:31:06 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-08 13:31:06 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-08 13:31:06 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc5MDQ4NjYsImlhdCI6MTYxNzg2ODg2Nn0.cpvnIXvaF5hosrDayzxKSPGwxXtEAhwhr1g59dT9JMk
+=======
+2021-04-08 13:56:20 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-08 13:56:20 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-08 13:56:20 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc5MDYzODAsImlhdCI6MTYxNzg3MDM4MH0.hKsdcAn1KcKvISM1PPZFlKb24NB4PyAFy-_iR6YMRaw
+>>>>>>> e4f6cb4e5d1222dd76b8bc9fcb2ac85c64cf6895
+2021-04-09 01:31:16 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 01:31:16 INFO  SecurityController:56 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 01:31:16 DEBUG SecurityController:66 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc5NDgwNzYsImlhdCI6MTYxNzkxMjA3Nn0.qsG4ZTic1PhEybG_CihYSOCpZhkJ4fwTYrhjsbI-k-M
+2021-04-09 11:40:32 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:40:32 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 11:40:32 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:41:04 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:41:04 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 11:41:04 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:47:52 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:47:52 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 11:47:52 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc5ODUwNzIsImlhdCI6MTYxNzk0OTA3Mn0.rqN6UuLSem-mU8lOnx2tLPSIoBCbX5fKoBQRejOHX1w
+2021-04-09 11:49:17 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:49:17 INFO  SecurityController:57 - Username and Password :{} rashi@gmail.com   Nikhar@1234
+2021-04-09 11:49:17 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:50:09 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:50:09 INFO  SecurityController:57 - Username and Password :{} rashi@gmail.com   Nikhar@1234
+2021-04-09 11:50:09 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:50:30 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:50:30 INFO  SecurityController:57 - Username and Password :{} rashi@gmail.com   Nikhar@1234
+2021-04-09 11:50:30 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:50:30 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:50:30 INFO  SecurityController:57 - Username and Password :{} rashi@gmail.com   Nikhar@1234
+2021-04-09 11:50:30 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:50:48 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:50:48 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   Nikhar@1234
+2021-04-09 11:50:48 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:51:07 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:51:07 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   Nikhar@1234
+2021-04-09 11:51:07 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:51:33 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:51:33 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 11:51:33 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 11:52:07 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 11:52:07 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 11:52:07 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTg1MzI3LCJpYXQiOjE2MTc5NDkzMjd9._zSPvI59Si7G7rZVmosaMUL1bBf7s2SJ9QoVhOfgT4Y
+2021-04-09 12:23:53 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 12:23:53 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-09 12:23:53 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 12:23:56 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 12:23:56 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-09 12:23:56 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 12:24:23 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 12:24:23 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-09 12:24:23 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 12:24:33 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 12:24:33 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   12345
+2021-04-09 12:24:33 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 12:25:47 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 12:25:47 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-09 12:25:47 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTc5ODczNDcsImlhdCI6MTYxNzk1MTM0N30.KADdR0-KcedKaeOfOYzxNVU1ujYBt_1MXaBKV0ruWwo
+2021-04-09 13:45:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 13:45:57 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 13:45:57 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc5OTIxNTcsImlhdCI6MTYxNzk1NjE1N30.k01UWvYXA2FLHPctRGY1Esa-J8hjB24NhzoLpft9q5M
+2021-04-09 13:45:59 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 13:45:59 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 13:45:59 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTc5OTIxNTksImlhdCI6MTYxNzk1NjE1OX0.qme27gdMpoBBOaqkfDAEVQI7VQg9au9Nd60cAqVp-IM
+2021-04-09 13:49:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 13:49:57 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-09 13:49:57 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 13:50:05 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 13:50:05 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   Nikhar@1234
+2021-04-09 13:50:05 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 13:50:06 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 13:50:06 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   Nikhar@1234
+2021-04-09 13:50:07 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 13:50:19 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 13:50:19 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-09 13:50:20 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 13:50:22 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 13:50:22 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   12345
+2021-04-09 13:50:23 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 13:50:24 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 13:50:24 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   12345
+2021-04-09 13:50:24 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 17:36:44 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:36:44 INFO  SecurityController:57 - Username and Password :{} abc@impetus.co.in   abc
+2021-04-09 17:37:03 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:37:03 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 17:37:03 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgwMDYwMjMsImlhdCI6MTYxNzk3MDAyM30.upqDsjJguqCOip4j7dIQ2gDo1rqXdnVdPrrJaCOrtak
+2021-04-09 17:40:46 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:40:46 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.co.in   1234
+2021-04-09 17:40:46 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 17:40:50 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:40:50 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.co.in   12345
+2021-04-09 17:40:50 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 17:40:55 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:40:55 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.co.in   Nikhar@1234
+2021-04-09 17:40:55 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 17:41:15 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:41:15 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.co.in   123
+2021-04-09 17:41:15 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 17:41:22 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:41:22 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   123
+2021-04-09 17:41:22 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 17:41:24 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:41:24 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 17:41:24 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDA2Mjg0LCJpYXQiOjE2MTc5NzAyODR9.xkgNaI8HjK-PKieoS2C3g2LrHSEVwdJKA2-9w-CPvLY
+2021-04-09 17:41:31 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:41:31 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   Nikhar@1234'
+2021-04-09 17:41:31 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 17:41:37 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:41:37 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   Nikhar@1234
+2021-04-09 17:41:37 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 17:43:06 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:43:06 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 17:43:06 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDA2Mzg2LCJpYXQiOjE2MTc5NzAzODZ9.sTvCK2oDpze-6SoxMJHSkXn6mM17AEDJgP51Z5G_JLw
+2021-04-09 17:43:12 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:43:12 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 17:43:12 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDA2MzkyLCJpYXQiOjE2MTc5NzAzOTJ9.DKedyQN5Efu7tKDyCsDLlsg7ALJoeQRSKw0S99thq0A
+2021-04-09 17:44:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:44:57 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 17:44:57 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDA2NDk3LCJpYXQiOjE2MTc5NzA0OTd9.9sy-O2nIho26X_5us4jbSFkngcsKt-ZwYWzLKDZSLhs
+2021-04-09 17:45:50 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 17:45:50 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 17:45:50 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDA2NTUwLCJpYXQiOjE2MTc5NzA1NTB9.EBbAOHu6go9gCH24bRJA6pANrJfmPTuq8CyW5EVMakM
+2021-04-09 18:08:53 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 18:08:53 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 18:08:53 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgwMDc5MzMsImlhdCI6MTYxNzk3MTkzM30.HnEYsID3ivmsMaoeVZE52wWb8keTR9cexQX-Fj8SCYI
+2021-04-09 18:17:47 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 18:17:47 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 18:17:47 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDA4NDY3LCJpYXQiOjE2MTc5NzI0Njd9.WbGbB7fq3LTZY7OAbjT4gDxUIVjl5VkUpfD-UoYXfnk
+2021-04-09 18:39:16 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 18:39:16 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-09 18:39:16 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgwMDk3NTYsImlhdCI6MTYxNzk3Mzc1Nn0.ItpgqOAnNhI59f8InmGtPMh6XjjnM7V8BBKpdMnmN_k
+2021-04-09 18:48:11 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 18:48:11 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 18:48:12 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDEwMjkyLCJpYXQiOjE2MTc5NzQyOTJ9.aCOuTXDy4VjbXdcemN48EFE7ENzgBFkY9hqf-Sz1U54
+2021-04-09 19:10:50 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 19:10:50 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 19:10:50 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDExNjUwLCJpYXQiOjE2MTc5NzU2NTB9.Vvhl7Aj8Y9M9Nc0Z3bxKc6Oy1i94ifBzr2U2dTqrl_c
+2021-04-09 19:12:21 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 19:12:21 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 19:12:21 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDExNzQxLCJpYXQiOjE2MTc5NzU3NDF9.ZowBHuEQvXDMiZ3ypUoO9DXb6asSZsUQnoEn7UCmofE
+2021-04-09 20:20:50 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:20:50 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-09 20:20:51 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 20:20:59 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:20:59 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-09 20:21:00 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 20:21:13 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:21:13 INFO  SecurityController:57 - Username and Password :{} rashi@gmail.com   123
+2021-04-09 20:21:13 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 20:21:17 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:21:17 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   123
+2021-04-09 20:21:17 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 20:21:24 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:21:24 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-09 20:21:25 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 20:21:34 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:21:34 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-09 20:21:34 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 20:23:18 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:23:18 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 20:23:18 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDE1OTk4LCJpYXQiOjE2MTc5Nzk5OTh9.KWWSdqRSuY5dcyy01rSp7mlja0NOLwc9485U8Ry8Rx0
+2021-04-09 20:38:38 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:38:38 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.co.in   1234
+2021-04-09 20:38:38 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-09 20:38:51 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 20:38:51 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 20:38:52 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDE2OTMyLCJpYXQiOjE2MTc5ODA5MzJ9.geLZ8SsWYh_JxgPDPCBdoAb0aVUUh6Vjz9lTH2mRlCw
+2021-04-09 21:03:10 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 21:03:10 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 21:03:49 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 21:03:49 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 21:03:49 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDE4NDI5LCJpYXQiOjE2MTc5ODI0Mjl9.fqtr4wqSA2Z8aLCCsqh10ulbSFvcEa6Lk4uvx8J4H1U
+2021-04-09 21:34:42 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-09 21:34:42 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-09 21:34:42 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDIwMjgyLCJpYXQiOjE2MTc5ODQyODJ9.D3J_7WtrnNfK5EmPBN3Pq5cM3-6jDaAnGm8GGUbLnx4
+2021-04-10 00:18:35 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:18:35 INFO  SecurityController:57 - Username and Password :{} rohit.sharma@impetus.com   1234
+2021-04-10 00:18:35 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-10 00:19:29 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:19:29 INFO  SecurityController:57 - Username and Password :{} rohit.sharma@impetus.com   1234
+2021-04-10 00:19:29 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyb2hpdC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgwMzAxNjksImlhdCI6MTYxNzk5NDE2OX0.86by9rbE8zAhmBsxRnAgjvCKP9-Y9ytuwUQYGHtULWo
+2021-04-10 00:21:32 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:21:32 INFO  SecurityController:57 - Username and Password :{} rohit.sharma@impetus.com   1234
+2021-04-10 00:21:33 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyb2hpdC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgwMzAyOTMsImlhdCI6MTYxNzk5NDI5M30.zniPCO79h5tm7obJ5zkhA_w6oZfajuc-eNUUjmGqobQ
+2021-04-10 00:23:14 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:23:14 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:23:14 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-10 00:23:26 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:23:26 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:23:27 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-10 00:37:28 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:37:28 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:37:41 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:37:41 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1245
+2021-04-10 00:37:47 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:37:47 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:37:51 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:37:51 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1245
+2021-04-10 00:38:02 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:38:02 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1235
+2021-04-10 00:38:51 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:38:51 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:39:39 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:39:39 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:45:49 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:45:49 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:46:28 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:46:28 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-10 00:46:28 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDMxNzg4LCJpYXQiOjE2MTc5OTU3ODh9.rtpvvjzH17TOkYEeDF1QR308SO_Rl96lp7-ZiYkWBTI
+2021-04-10 00:46:48 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:46:48 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-10 00:46:48 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MDMxODA4LCJpYXQiOjE2MTc5OTU4MDh9.Hzy4GwFFPZuq3PsRoPnHHd-lbfIDJmhGVXNW29t--g4
+2021-04-10 00:49:02 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:49:02 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:53:05 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:53:05 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:53:05 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-10 00:54:40 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:54:40 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:54:41 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtoYXI4MjM2OUBnbWFpbC5jb20iLCJleHAiOjE2MTgwMzIyODEsImlhdCI6MTYxNzk5NjI4MX0.8wrO04fqNfXC8BZ2bOZRFLlbQUNLk-MoSsTERE1z4Go
+2021-04-10 00:56:36 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:56:36 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:56:36 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtoYXI4MjM2OUBnbWFpbC5jb20iLCJleHAiOjE2MTgwMzIzOTYsImlhdCI6MTYxNzk5NjM5Nn0.gAxz1gVEBV2GqywERTWCyjQyjolqyp8oSxEEZB9xm00
+2021-04-10 00:57:06 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-10 00:57:06 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   1234
+2021-04-10 00:57:07 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtoYXI4MjM2OUBnbWFpbC5jb20iLCJleHAiOjE2MTgwMzI0MjcsImlhdCI6MTYxNzk5NjQyN30.gjEHXC_cvF1Lr3exqZ07SrJ1iZKGrxY3x_A6hdOQksg
+2021-04-11 13:47:57 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-11 13:47:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 13:47:57 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 13:47:57 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 13:58:43 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-11 13:58:43 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 13:58:43 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 13:58:43 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 15:27:42 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-11 15:27:42 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 15:27:42 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 15:27:42 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 15:33:28 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-11 15:33:28 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 15:33:28 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 15:33:28 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 15:48:51 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-11 15:48:51 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 15:48:51 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 15:48:51 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 21:32:11 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 21:32:11 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-11 21:32:11 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgxOTI5MzEsImlhdCI6MTYxODE1NjkzMX0.VNC5KSmVLuWwnBoUTiRkIaqk2pJyyAbrB0rSTeJ6NiE
+2021-04-11 21:56:17 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 21:56:17 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-11 21:56:17 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgxOTQzNzcsImlhdCI6MTYxODE1ODM3N30.N1ZDOl00irnl0_uYpEBtIEOAgGJMJhHf89N6SNVX5h0
+2021-04-11 22:30:44 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 22:30:44 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-11 22:30:45 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgxOTY0NDUsImlhdCI6MTYxODE2MDQ0NX0.tjQv0jOD24G_FaJimxH0nQVQY7ouaq5XZZUBHFNw3D4
+2021-04-11 22:49:57 INFO  SecurityControllerTest:57 - Inside generateTokenSuccessTest method
+2021-04-11 22:49:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 22:49:57 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 22:49:57 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 23:01:27 INFO  SecurityControllerTest:57 - Inside generateTokenSuccessTest method
+2021-04-11 23:01:27 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 23:01:27 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 23:01:27 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 23:06:24 INFO  SecurityControllerTest:57 - Inside generateTokenSuccessTest method
+2021-04-11 23:06:24 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 23:06:24 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 23:06:24 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 23:12:52 INFO  SecurityControllerTest:57 - Inside generateTokenSuccessTest method
+2021-04-11 23:12:52 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 23:12:52 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-11 23:12:52 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-11 23:25:08 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 23:25:08 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-11 23:25:08 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-11 23:25:13 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 23:25:13 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-11 23:25:13 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-11 23:35:21 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-11 23:35:21 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-11 23:35:21 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgyMDAzMjEsImlhdCI6MTYxODE2NDMyMX0.nVKNDx7i0JycldD8zGoyS74bbD-sxfmOUw_QzOkAIqk
+2021-04-12 00:37:15 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 00:37:15 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-12 00:37:15 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgyMDQwMzUsImlhdCI6MTYxODE2ODAzNX0.w9OCXlP3RmNMFtm2XAxlIbKlNgYoKIjtn9Q_lk35aLg
+2021-04-12 01:07:39 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 01:07:39 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-12 01:07:39 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgyMDU4NTksImlhdCI6MTYxODE2OTg1OX0.JQPF9l2fPsTmY6e3VYi1pFr_RZWqAZ3tju8MrT9lrps
+2021-04-12 02:02:47 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 02:02:47 INFO  SecurityController:57 - Username and Password :{} usertest@gmail.com   1234
+2021-04-12 02:02:47 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VydGVzdEBnbWFpbC5jb20iLCJleHAiOjE2MTgyMDkxNjcsImlhdCI6MTYxODE3MzE2N30.HRHjbb3SgZOZraO-y12XPUAtpmhk_ureXjI5YN9Vqmo
+2021-04-12 17:25:19 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 17:25:19 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-12 17:25:19 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgyNjQ1MTksImlhdCI6MTYxODIyODUxOX0.1FWXJdt3z-eeqFAqEo-33_vXuzcdpmTqWQ--RjaqUCE
+2021-04-12 17:29:05 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 17:29:05 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-12 17:29:06 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-12 17:30:45 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 17:30:45 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-12 17:30:45 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MjY0ODQ1LCJpYXQiOjE2MTgyMjg4NDV9.WMQ-OUdg2Sy28VDMijf2h_LqqCmaF1aK_-Fc8a9P5Kc
+2021-04-12 17:34:37 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 17:34:37 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-12 17:34:37 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgyNjUwNzcsImlhdCI6MTYxODIyOTA3N30.lGpPHnLGDOL6LDHTo5DwhG2e2QG1T0W4Z6BKXQsrHB4
+2021-04-12 17:50:54 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 17:50:54 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-12 17:50:55 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgyNjYwNTUsImlhdCI6MTYxODIzMDA1NX0.-73tgaYgIex7TbWVM-i7V9nyFtVIhhMNYBBfcy9My3E
+2021-04-12 18:10:57 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-12 18:10:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 18:10:57 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-12 18:10:57 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-12 18:38:57 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-12 18:38:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 18:38:57 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-12 18:38:57 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-12 19:14:42 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-12 19:14:42 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 19:14:42 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-12 19:14:42 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-12 20:05:36 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-12 20:05:36 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-12 20:05:36 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-12 20:05:36 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 00:31:22 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 00:31:22 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 00:31:22 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 00:31:22 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 00:42:17 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 00:42:17 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 00:42:17 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 00:42:17 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 10:40:07 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 10:40:07 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 10:40:07 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 10:40:07 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 10:55:52 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 10:55:52 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 10:55:52 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 10:55:52 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 11:16:08 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 11:16:08 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 11:16:08 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 11:16:08 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 11:37:35 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 11:37:35 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 11:37:35 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 11:37:35 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 11:48:21 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 11:48:21 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 11:48:21 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 11:48:21 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 11:59:10 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 11:59:10 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 11:59:10 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 11:59:10 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 13:03:52 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 13:03:52 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 13:03:52 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 13:03:52 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 13:48:44 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 13:48:44 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 13:48:44 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 13:48:44 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 14:04:53 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 14:04:53 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 14:04:53 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 14:04:53 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 14:30:15 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 14:30:15 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 14:30:15 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 14:30:15 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 14:52:39 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 14:52:39 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 14:52:39 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 14:52:39 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 16:27:04 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 16:27:04 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 16:27:04 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 16:27:04 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 16:37:00 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 16:37:00 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 16:37:00 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 16:37:00 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 16:42:08 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-13 16:42:08 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 16:42:08 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-13 16:42:08 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-13 18:37:37 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 18:37:37 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-13 18:37:37 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgzNTUyNTcsImlhdCI6MTYxODMxOTI1N30.FoE-hU-9h3_ntCcwohfq5qz1PYG9mQaSDJlfvp0mMp8
+2021-04-13 18:52:34 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 18:52:34 INFO  SecurityController:57 - Username and Password :{} amisha@impetus.com   1234
+2021-04-13 18:52:34 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbWlzaGFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgzNTYxNTQsImlhdCI6MTYxODMyMDE1NH0.NYRGTuKROAAjcv6a9q4DU6RGz5BT5PcN_usSVjmV1kg
+2021-04-13 18:55:06 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 18:55:06 INFO  SecurityController:57 - Username and Password :{} amisha@impetus.com   1234
+2021-04-13 18:55:06 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbWlzaGFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgzNTYzMDYsImlhdCI6MTYxODMyMDMwNn0.GL3SQs3r7Ht5XSWy1njQiSVsItTncpoAJK9wCIKNG8s
+2021-04-13 19:00:49 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 19:00:49 INFO  SecurityController:57 - Username and Password :{} amisha@impetus.com   1234
+2021-04-13 19:00:49 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbWlzaGFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgzNTY2NDksImlhdCI6MTYxODMyMDY0OX0.gI4qi3bwZy5YcKnPpL4CbNnCxANEccpmCuIaBa076ZI
+2021-04-13 19:13:48 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 19:13:48 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-13 19:13:48 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-13 19:13:55 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 19:13:55 INFO  SecurityController:57 - Username and Password :{} rashi.jain@gmail.com   1234
+2021-04-13 19:13:55 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-13 19:14:42 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 19:14:42 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-13 19:14:42 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4MzU3NDgyLCJpYXQiOjE2MTgzMjE0ODJ9.VFVPBjWDxVHUmTvPPY5lbvxyK4DG0VhBkvUeHgtT0Jc
+2021-04-13 19:20:24 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 19:20:24 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-13 19:20:24 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgzNTc4MjQsImlhdCI6MTYxODMyMTgyNH0.j-jL2Skr8E68VKTfGuejNVGlroEY0VJbOdig8htCbWU
+2021-04-13 20:34:36 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 20:34:36 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-13 20:34:36 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTgzNjIyNzYsImlhdCI6MTYxODMyNjI3Nn0.scYEJbVn2eyY5kAVHzB-43Y_l1KDqZgTy_XolsUD_Mw
+2021-04-13 20:43:52 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-13 20:43:52 INFO  SecurityController:57 - Username and Password :{} amisha@impetus.com   1234
+2021-04-13 20:43:52 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbWlzaGFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTgzNjI4MzIsImlhdCI6MTYxODMyNjgzMn0.E7O3FkD2GbZEqOotOmen__uufga5YGfbLfLQdgWogRU
+2021-04-14 16:36:16 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-14 16:36:16 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-14 16:36:17 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTg0MzQzNzcsImlhdCI6MTYxODM5ODM3N30.dQDPsyRYW5jTqB_tJYwsZkXhK8FdSm_N1Rdq82qV0ew
+2021-04-15 12:15:14 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 12:15:14 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-15 12:15:14 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4NTA1MTE0LCJpYXQiOjE2MTg0NjkxMTR9.55VwJlneoLOUzzyfPxe2gXaG7o7BPQ2IaLVqHfRh_Rw
+2021-04-15 12:22:14 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 12:22:14 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-15 12:22:14 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg1MDU1MzQsImlhdCI6MTYxODQ2OTUzNH0.maDeLMBU3STYdlWI39tNLteaNW2p7AJDw1FZPaxRTI0
+2021-04-15 14:06:07 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 14:06:07 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-15 14:06:07 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg1MTE3NjcsImlhdCI6MTYxODQ3NTc2N30.aHkzYI_gkhScrSM1jv2A8gIdmlXw_eVyVfVbaO6jUkQ
+2021-04-15 14:14:40 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 14:14:40 INFO  SecurityController:57 - Username and Password :{} mukul@impetus.com   1234
+2021-04-15 14:14:41 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtdWt1bEBpbXBldHVzLmNvbSIsImV4cCI6MTYxODUxMjI4MSwiaWF0IjoxNjE4NDc2MjgxfQ.7vdAThjwrO0UPj8dH7gJbZn5iJudW2Zta5j1e2pDXlo
+2021-04-15 18:09:13 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 18:09:13 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-15 18:09:13 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg1MjYzNTMsImlhdCI6MTYxODQ5MDM1M30.0QUAxZGWVPdwvIAJw7YPb68XTpTJIgt1RcYqidMPr7A
+2021-04-15 18:31:00 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 18:31:00 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-15 18:31:00 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg1Mjc2NjAsImlhdCI6MTYxODQ5MTY2MH0.oXrtFaoO9bwiAYJtP3sV7ttUyn7T-yu2eJKzTZl6u58
+2021-04-15 18:49:42 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 18:49:42 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-15 18:49:42 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4NTI4NzgyLCJpYXQiOjE2MTg0OTI3ODJ9.hZc5Mxvi7kzPWczqYS6gjEKaiQ5_tfCvmqf-dGhZQMk
+2021-04-15 19:09:18 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 19:09:18 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-15 19:09:18 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg1Mjk5NTgsImlhdCI6MTYxODQ5Mzk1OH0.Y2vQUBrCa-0drup7AO7L1rZtFDeKYgtPlsOPm13c7wI
+2021-04-15 22:47:49 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-15 22:47:49 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-15 22:47:51 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTg1NDMwNjksImlhdCI6MTYxODUwNzA2OX0.2CQ75bm5KC2GGVwCmwbwENUGR8UTYRlNqp3bq8o9iyk
+2021-04-16 01:36:38 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-16 01:36:38 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 01:36:38 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-16 01:36:38 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-16 16:40:29 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 16:40:29 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-16 16:40:30 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4NjA3NDMwLCJpYXQiOjE2MTg1NzE0MzB9.s4eelIetq3Y-8A6BG-mXWKEERwQPx1KfTtuniJC_Vnw
+2021-04-16 16:55:20 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 16:55:20 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-16 16:55:20 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg2MDgzMjAsImlhdCI6MTYxODU3MjMyMH0.mBqQ_YPc3A94Cm8h9kIrFp71K8AJ0yXFD0gC__zBfZQ
+2021-04-16 19:34:36 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 19:34:36 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-16 19:34:37 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTg2MTc4NzcsImlhdCI6MTYxODU4MTg3N30.fIzMv8hSZaKkbTYPR1rKB5R3uT1tKywj3o6WwVZD9xw
+2021-04-16 19:47:38 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 19:47:38 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-16 19:47:38 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg2MTg2NTgsImlhdCI6MTYxODU4MjY1OH0.T3mAu_GWC8tyPtOO6Z216U7LUHd8jVj8EZpHmQXnhn4
+2021-04-16 20:39:13 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 20:39:13 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-16 20:39:13 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg2MjE3NTMsImlhdCI6MTYxODU4NTc1M30.rXptX6gDaRYVt5TLsU0yHUlDEnNNDWMx_0NTbswTfGg
+2021-04-16 20:48:34 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 20:48:34 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-16 20:48:34 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg2MjIzMTQsImlhdCI6MTYxODU4NjMxNH0.thDm-lFRm6lIzPkVeapzp1UToB811qA64lgGP-qRZcA
+2021-04-16 20:49:30 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 20:49:30 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-16 20:49:30 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg2MjIzNzAsImlhdCI6MTYxODU4NjM3MH0.9GZHjW1LB9PfLQpiFF0twkQHBqhDLQosHxrRn_rUg_s
+2021-04-16 20:57:01 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 20:57:01 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-16 20:57:01 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTg2MjI4MjEsImlhdCI6MTYxODU4NjgyMX0.YA-z-lOuAb3oM6SqTD1Fcpa9lg0Fjv_Md2T-CewsA4M
+2021-04-16 20:57:07 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 20:57:07 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-16 20:57:07 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4NjIyODI3LCJpYXQiOjE2MTg1ODY4Mjd9.FqxogikzY2I5a5862Hs2yWWi7ekRYmTh-Pgyk_Y5Ikw
+2021-04-16 21:10:37 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 21:10:37 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-16 21:10:37 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTg2MjM2MzcsImlhdCI6MTYxODU4NzYzN30.BsyPkkWMIsmQllkmfD9DE_kdjK4ocAcPCQV_hqkiqeU
+2021-04-16 21:44:59 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-16 21:44:59 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-16 21:44:59 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTg2MjU2OTksImlhdCI6MTYxODU4OTY5OX0.yY_aAPtDQrDM2QONQgxCbaFzz6mqxP7T6YvSxv8puhA
+2021-04-17 15:30:07 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 15:30:07 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-17 15:30:08 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4Njg5NjA3LCJpYXQiOjE2MTg2NTM2MDd9.wXdAKAqd8_Q4WT7MtFImQm7P0imz7Jw7mDSBbZLz--A
+2021-04-17 15:34:08 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 15:34:08 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-17 15:34:08 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg2ODk4NDgsImlhdCI6MTYxODY1Mzg0OH0.eoKhXvA1EjPVnGul2ADpRiW2NIH8R3CtnsCyJyc1mhE
+2021-04-17 15:34:22 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 15:34:22 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-17 15:34:22 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4Njg5ODYyLCJpYXQiOjE2MTg2NTM4NjJ9.MLk-HLSYzgmRqtAA1lc85xDjNKDEXMrR6Ipwlaixuyg
+2021-04-17 15:35:39 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 15:35:39 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   1234
+2021-04-17 15:35:39 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbC5zaGFybWFAaW1wZXR1cy5jb20iLCJleHAiOjE2MTg2ODk5MzksImlhdCI6MTYxODY1MzkzOX0.eAQmnt7rgFAbfN2bIDiHUHukI8yCzwBUGpJUI0zzh8A
+2021-04-17 15:35:43 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 15:35:43 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-17 15:35:44 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg2ODk5NDQsImlhdCI6MTYxODY1Mzk0NH0.pvn1K-chnQHzqyMVqj2CA5SciCbE_g34iG8UJiMwiOk
+2021-04-17 15:37:52 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 15:37:52 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-17 15:37:52 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4NjkwMDcyLCJpYXQiOjE2MTg2NTQwNzJ9.VMEvu6-C46FRSQqol6A2_KvvNFgJSU402dV8a-fuO5c
+2021-04-17 15:39:03 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 15:39:03 INFO  SecurityController:57 - Username and Password :{} niki@impetus.co.in   1234
+2021-04-17 15:39:03 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtpQGltcGV0dXMuY28uaW4iLCJleHAiOjE2MTg2OTAxNDMsImlhdCI6MTYxODY1NDE0M30.8zBwPDI-WL1uJ6N8Qv-dcZaKj140n8apVxpE8C72ybw
+2021-04-17 15:44:41 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 15:44:41 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-17 15:44:41 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4NjkwNDgxLCJpYXQiOjE2MTg2NTQ0ODF9.dhZl8EpKkQlXimTrFTRu4pJ6FHWJHvVVh8TT3a59hx8
+2021-04-17 18:27:47 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-17 18:27:47 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-17 18:27:47 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-17 18:27:47 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 01:10:40 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 01:10:40 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 01:10:40 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 01:10:40 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 01:34:22 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 01:34:22 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 01:34:22 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 01:34:22 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 01:41:28 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 01:41:28 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 01:41:28 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 01:41:28 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 02:03:40 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 02:03:40 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 02:03:40 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 02:03:40 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 02:08:02 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 02:08:02 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 02:08:02 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 02:08:02 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 14:25:03 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 14:25:03 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 14:25:03 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 14:25:03 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 14:29:44 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 14:29:44 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 14:29:44 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 14:29:44 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 14:34:56 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 14:34:56 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 14:34:56 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 14:34:56 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 14:50:40 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 14:50:40 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 14:50:40 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 14:50:40 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 14:58:21 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 14:58:21 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 14:58:21 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 14:58:21 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 16:20:51 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 16:20:51 INFO  SecurityController:57 - Username and Password :{} greatkhali@gmail.com   123456
+2021-04-18 16:20:53 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJncmVhdGtoYWxpQGdtYWlsLmNvbSIsImV4cCI6MTYxODc3OTA1MiwiaWF0IjoxNjE4NzQzMDUyfQ.FkBa81OoqriVhKcX5gd_jlDmBwBoFWfzAIU_b8b_75k
+2021-04-18 16:22:54 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 16:22:54 INFO  SecurityController:57 - Username and Password :{} rashi.jain@impetus.com   1234
+2021-04-18 16:22:54 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXNoaS5qYWluQGltcGV0dXMuY29tIiwiZXhwIjoxNjE4Nzc5MTc0LCJpYXQiOjE2MTg3NDMxNzR9.sDEnokk3yVI84dXSrtBT8Mx_FvHjynRxIS2HxQr20wo
+2021-04-18 18:59:05 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 18:59:05 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 18:59:05 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 18:59:05 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 19:15:57 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 19:15:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 19:15:57 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 19:15:57 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 19:40:00 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-18 19:40:00 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 19:40:00 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-18 19:40:00 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-18 21:32:24 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:32:24 INFO  SecurityController:57 - Username and Password :{} admin@incurance.com   Admin@123
+2021-04-18 21:32:24 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-18 21:32:37 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:32:37 INFO  SecurityController:57 - Username and Password :{} admin@incurance.com   Admin@123
+2021-04-18 21:32:38 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-18 21:33:40 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:33:40 INFO  SecurityController:57 - Username and Password :{} admin@incurance.com   Admin@123
+2021-04-18 21:33:40 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-18 21:34:22 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:34:22 INFO  SecurityController:57 - Username and Password :{} admin@insurance.com   Admin@123
+2021-04-18 21:34:23 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBpbnN1cmFuY2UuY29tIiwiZXhwIjoxNjE4Nzk3ODYyLCJpYXQiOjE2MTg3NjE4NjJ9.rd8qiOIBOhWA0COZhuqoRD4n5dyl87jUxR6xtZscBPE
+2021-04-18 21:34:56 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:34:56 INFO  SecurityController:57 - Username and Password :{} admin@insurance.com   Admin@123
+2021-04-18 21:34:56 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBpbnN1cmFuY2UuY29tIiwiZXhwIjoxNjE4Nzk3ODk2LCJpYXQiOjE2MTg3NjE4OTZ9.qAzJmh_inBgmiXSqJ-LAR1akyEJrGu-YHT7e1XLXXKA
+2021-04-18 21:35:20 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:35:20 INFO  SecurityController:57 - Username and Password :{} admin@insurance.com   Admin@123
+2021-04-18 21:35:20 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBpbnN1cmFuY2UuY29tIiwiZXhwIjoxNjE4Nzk3OTIwLCJpYXQiOjE2MTg3NjE5MjB9.GsbkkfiDYJQCeX9YrlP3VYkurWKwPSbv3f-In8HeqC8
+2021-04-18 21:36:21 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:36:21 INFO  SecurityController:57 - Username and Password :{} admin@insurance.com   Admin@123
+2021-04-18 21:36:21 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBpbnN1cmFuY2UuY29tIiwiZXhwIjoxNjE4Nzk3OTgxLCJpYXQiOjE2MTg3NjE5ODF9.ffu1YbM0YM7ay0Eq4Po6-dboZ0xXf3XsxGm-ZOJudpA
+2021-04-18 21:42:35 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:42:35 INFO  SecurityController:57 - Username and Password :{} kunal@test.com   Kunal123
+2021-04-18 21:42:35 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbEB0ZXN0LmNvbSIsImV4cCI6MTYxODc5ODM1NSwiaWF0IjoxNjE4NzYyMzU1fQ.P0bRvER3leYXKh57S1afLXUxnqtnzsbX37-qfvWE42o
+2021-04-18 21:46:20 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 21:46:20 INFO  SecurityController:57 - Username and Password :{} kunal@test.com   Kunal123
+2021-04-18 21:46:20 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbEB0ZXN0LmNvbSIsImV4cCI6MTYxODc5ODU4MCwiaWF0IjoxNjE4NzYyNTgwfQ.0VlFCgDWwbOYXEai0xxKPoRPkMQl4iL6nO0hjB1WcfQ
+2021-04-18 22:01:08 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 22:01:08 INFO  SecurityController:57 - Username and Password :{} admin@insurance.com   Admin123
+2021-04-18 22:01:09 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-18 22:01:13 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 22:01:13 INFO  SecurityController:57 - Username and Password :{} admin@insurance.com   Admin123
+2021-04-18 22:01:13 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-18 22:01:20 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 22:01:20 INFO  SecurityController:57 - Username and Password :{} admin@insurance.com   Admin123
+2021-04-18 22:01:20 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-18 22:01:26 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 22:01:26 INFO  SecurityController:57 - Username and Password :{} admin@insurance.com   Admin@123
+2021-04-18 22:01:27 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBpbnN1cmFuY2UuY29tIiwiZXhwIjoxNjE4Nzk5NDg3LCJpYXQiOjE2MTg3NjM0ODd9.kG-9y8tpxhZwBEivkAdGJc1c9kK_krmdik3lrNRo5gU
+2021-04-18 22:34:30 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 22:34:30 INFO  SecurityController:57 - Username and Password :{} nikhar.jain@impetus.com   Mukul123
+2021-04-18 22:34:30 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtoYXIuamFpbkBpbXBldHVzLmNvbSIsImV4cCI6MTYxODgwMTQ3MCwiaWF0IjoxNjE4NzY1NDcwfQ.SrXgHVk2YheG4hJKjqrQ7tWm75rskBYJxWrpcL5gOCQ
+2021-04-18 23:05:46 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 23:05:46 INFO  SecurityController:57 - Username and Password :{} nikhar.jain@impetus.com   Mukul123
+2021-04-18 23:05:46 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtoYXIuamFpbkBpbXBldHVzLmNvbSIsImV4cCI6MTYxODgwMzM0NiwiaWF0IjoxNjE4NzY3MzQ2fQ.P5qEGb7m7e5MUdLUzSkF9umOgUnsHKJSiutZFHHLFIw
+2021-04-18 23:53:34 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-18 23:53:34 INFO  SecurityController:57 - Username and Password :{} nikhar.jain@impetus.com   Mukul123
+2021-04-18 23:53:34 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtoYXIuamFpbkBpbXBldHVzLmNvbSIsImV4cCI6MTYxODgwNjIxNCwiaWF0IjoxNjE4NzcwMjE0fQ.QA2Iyjapip_WSB6Pj52V3Qzd2PDgRsJbkhgWeUYobO0
+2021-04-19 00:06:43 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 00:06:43 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   Kunal123
+2021-04-19 00:06:44 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 00:06:57 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 00:06:57 INFO  SecurityController:57 - Username and Password :{} kunal@test.com   Kunal123
+2021-04-19 00:06:57 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrdW5hbEB0ZXN0LmNvbSIsImV4cCI6MTYxODgwNzAxNywiaWF0IjoxNjE4NzcxMDE3fQ.SyhSWAFtnUmZynt9obKDHpQfXIB612kMwQ4F-219fMg
+2021-04-19 00:07:03 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 00:07:03 INFO  SecurityController:57 - Username and Password :{} kunal@test.com   Kunal@123
+2021-04-19 00:07:04 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 00:08:07 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 00:08:07 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   Nikhar@123
+2021-04-19 00:08:07 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 00:08:12 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 00:08:12 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   Nikhar123
+2021-04-19 00:08:13 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 00:08:41 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 00:08:41 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   Nikhar123
+2021-04-19 00:08:42 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 00:09:36 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 00:09:36 INFO  SecurityController:57 - Username and Password :{} nikhar82369@gmail.com   Kunal@123
+2021-04-19 00:09:36 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaWtoYXI4MjM2OUBnbWFpbC5jb20iLCJleHAiOjE2MTg4MDcxNzYsImlhdCI6MTYxODc3MTE3Nn0.ZNvzIXTvv_aeqerUwETnZIHSGEbuey3QCUM0ADhA0Mc
+2021-04-19 11:29:18 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-19 11:29:18 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 11:29:18 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-19 11:29:18 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-19 11:41:35 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-19 11:41:35 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 11:41:35 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-19 11:41:35 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-19 11:49:42 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-19 11:49:42 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 11:49:42 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-19 11:49:42 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-19 11:56:47 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 11:56:47 INFO  SecurityController:57 - Username and Password :{} jayesh@gmail.com   123456
+2021-04-19 11:56:47 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXllc2hAZ21haWwuY29tIiwiZXhwIjoxNjE4ODQ5NjA3LCJpYXQiOjE2MTg4MTM2MDd9.QaTqxKsPhIsliQbhmtkbyEegyMnC_vISFmQGCpKRQvs
+2021-04-19 11:58:28 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 11:58:28 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   123456
+2021-04-19 11:58:28 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 11:58:36 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 11:58:36 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   123456
+2021-04-19 11:58:37 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 11:58:46 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 11:58:46 INFO  SecurityController:57 - Username and Password :{} kunal.sharma@impetus.com   123456
+2021-04-19 11:58:47 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 11:59:31 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 11:59:31 INFO  SecurityController:57 - Username and Password :{} tom@gmil.com   123456
+2021-04-19 11:59:31 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b21AZ21pbC5jb20iLCJleHAiOjE2MTg4NDk3NzEsImlhdCI6MTYxODgxMzc3MX0.N7fRL_2gyf1-u_VrRLedtUX02UZLfBHpcdAeBcrXMX4
+2021-04-19 12:41:27 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 12:41:27 INFO  SecurityController:57 - Username and Password :{} admin@impetus.com   1234
+2021-04-19 12:41:29 ERROR SecurityController:61 - Bad Credentials Exception inside generateToken method in SecurityController
+2021-04-19 14:39:28 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-19 14:39:28 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 14:39:28 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-19 14:39:28 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-19 14:43:56 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-19 14:43:56 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 14:43:56 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-19 14:43:56 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
+2021-04-19 14:47:18 INFO  SecurityControllerTest:56 - Inside generateTokenSuccessTest method
+2021-04-19 14:47:18 INFO  SecurityController:54 - Inside generateToken Method in SecurityRestImpl
+2021-04-19 14:47:18 INFO  SecurityController:57 - Username and Password :{} aman@impetus.com   1234
+2021-04-19 14:47:18 DEBUG SecurityController:67 - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWpkZWVwQGltcGV0dXMuY29tIiwiZXhwIjoxNjE3OTM5MDgxLCJpYXQiOjE2MTc5MDMwODF9.FZGQ6rjsJFRtVXwJLT3paLy5HvD_DcOYmlEjO736Qsg
