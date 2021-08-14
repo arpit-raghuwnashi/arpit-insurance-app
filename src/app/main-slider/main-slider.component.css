@@ -1,0 +1,17 @@
+.main_slider img{
+    height: max-content !important;
+}
+
+/* nav-bar visibility for carousel */
+/*
+.main_slider.owl-nav.ng-star-inserted {
+    visibility: hidden !important ;
+}*/
+/*
+.owl-prev{
+    visibility: hidden;
+}
+.owl-next{
+    visibility: hidden;
+}
+*/

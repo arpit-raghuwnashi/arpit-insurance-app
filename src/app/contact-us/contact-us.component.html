@@ -1,0 +1,37 @@
+<app-header></app-header>
+<body>
+<div class="container contact-form">
+    <!--<div class="contact-image">
+        <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+    </div>-->
+    <form method="post" (ngSubmit)="submitForm()" #contactFrom="ngForm">
+        <h2 class="font-weight-bolder">Drop Us a Message</h2>
+       <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" name="txtName" #txtName="ngModel" class="form-control" #txtName="ngModel"  [class.is-invalid]="txtName.invalid && txtName.touched" [(ngModel)]="name" placeholder="Your Name *" value="" required/>
+                    <small class="error-message" [class.invisible]="txtName.valid || txtName.untouched">* Please Enter Your Name</small>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="txtEmail" #txtEmail="ngModel" class="form-control" #txtEmail="ngModel" [(ngModel)]="email" placeholder="Your Email *" value="" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [class.is-invalid]="txtEmail.invalid && txtEmail.touched" required/>
+                    <small class="error-message" [class.invisible]="txtEmail.valid || txtEmail.untouched">* Please Enter Email</small>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="txtPhone" #txtPhone="ngModel" #txtPhone="ngModel" pattern="^\d{10}$" [class.is-invalid]="txtPhone.invalid && txtPhone.touched"class="form-control" [(ngModel)]="phone" placeholder="Your Phone Number *" value="" required/>
+                    <small class="error-message" [class.invisible]="txtPhone.valid || txtPhone.untouched">* Please Enter Valid Contact Number</small>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="btnSubmit" class="btnContact" [disabled]="contactFrom.form.invalid" (click)="submitForm()" value="Send Message" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea name="txtMsg" #txtMsg="ngModel" class="form-control" [(ngModel)]="message" placeholder="Your Message *" style="width: 100%; height: 150px;" [class.is-invalid]="txtMsg.invalid && txtMsg.touched" required></textarea>
+                    <small class="error-message" [class.invisible]="txtMsg.valid || txtMsg.untouched">* Please Enter Your Name</small>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<app-footer></app-footer>
+</body>

@@ -1,0 +1,259 @@
+
+<div class="row justify-content-center">
+    <div class="col-sm-6">
+        <div class="card card-user">
+            <div class="modal-header">
+                <h5 class="modal-title">Payment</h5>
+            </div>
+            <div class="card-body p-5">
+                <p style="text-align: center; text-transform: capitalize;" class="alert alert-success">Buying an
+                    insurance is like fixing a leak in your roof. The longer you wait, more expensive it gets!</p>
+
+                <form #payform="ngForm" ngNativeValidate>
+                    <div class="form-group">
+                        <label for="username">Full name (on the card)</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" name="username" placeholder="Enter User Name"
+                                name="username" ngModel #uname="ngModel"
+                                [class.is-invalid]="uname.invalid && uname.touched" pattern="[a-zA-Z ]*" required>
+                        </div>
+                        <div *ngIf="uname.errors && uname.invalid && uname.touched">
+                            <small class="text-danger" *ngIf="uname.errors.required">User Name is required*</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardNumber">Card number</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                            </div>
+                            <input type="number" class="form-control" name="cardNumber"
+                                placeholder="XXXX-XXXX-XXXX-XXXX" #cardNumber="ngModel" pattern="^\d{16}$"
+                                [class.is-invalid]="cardNumber.invalid && cardNumber.touched" ngModel required>
+
+                        </div>
+                        <div *ngIf="cardNumber.errors && cardNumber.invalid && cardNumber.touched">
+                            <small class="text-danger" *ngIf="cardNumber.errors.required">
+                                Card Details is required*
+                            </small>
+                            <small class="text-danger" *ngIf="cardNumber.errors?.pattern">
+                                Invalid format*
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardNumber">Amount( INR )</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                            </div>
+                            <input type="number" class="form-control" name="amount"  placeholder="Enter Amount here!"
+                                #amountid="ngModel" [class.is-invalid]="amountid.invalid && amountid.touched"
+                                [(ngModel)]="amount" required readonly>
+                        </div>
+                        <div *ngIf="amountid.errors && amountid.invalid && amountid.touched">
+                            <small class="text-danger" *ngIf="amountid.errors.required">
+                                Amount is required*
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label><span class="hidden-xs">Expiration</span> </label>
+                                <div class="form-inline">
+                                    <input style="width:45%" type="number" placeholder="MM" pattern="^([1-9]|1[012])$"
+                                        class="form-control" name="month" #month="ngModel" ngModel required>
+
+                                    <span style="width:10%; text-align: center"> / </span>
+                                    <input style="width:45%" type="number" placeholder="YY" pattern="^\d{2}$"
+                                        class="form-control" min="21" name="year" #year="ngModel" ngModel required>
+
+                                </div>
+                                <div
+                                    *ngIf="(year.errors && year.invalid && year.touched) || (month.errors && month.invalid && month.touched)">
+                                    <small class="text-danger"
+                                        *ngIf="year?.errors?.required || month?.errors?.required">
+                                        Card Details required*
+                                    </small>
+                                    <small class="text-danger" *ngIf="year?.errors?.pattern || month?.errors?.pattern">
+                                        Invalid format*
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label data-toggle="tooltip" title=""
+                                    data-original-title="3 digits code on back side of the card">CVV <i
+                                        class="fa fa-question-circle"></i></label>
+                                <input type="password" class="form-control" #enterCVV="ngModel" pattern="^\d{3}$"
+                                    placeholder="Enter CVV" min="0" name="enterCVV"
+                                    [class.is-invalid]="enterCVV.invalid && enterCVV.touched" ngModel required>
+                                <div *ngIf="enterCVV.errors && enterCVV.invalid && enterCVV.touched">
+                                    <small class="text-danger" *ngIf="enterCVV.errors.required">CVV is required*</small>
+                                    <small class="text-danger" *ngIf="enterCVV?.errors?.pattern">
+                                        Invalid format*
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="update ml-auto mr-auto" *ngIf="orderId">
+                            <button type="submit" class="btn btn-outline-success btn-round"
+                                [disabled]="payform.form.invalid" (click)="payAmount(invoice)">
+                                Pay
+                            </button>
+                        </div>
+                        <div class="update ml-auto mr-auto" *ngIf="!orderId">
+                            <button type="submit" class="btn btn-outline-success btn-round"
+                                [disabled]="payform.form.invalid" (click)="submitApplication(invoice)">
+                                Pay
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<ng-template #invoice let-modal>
+    <div id="printable">
+        <div class="modal-header invoice-header">
+            <h4 class="modal-title" id="modal-basic-title">Invoice</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="reviewData">
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Customer Name</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>{{user.firstName | uppercase}} {{user.lastName | uppercase}}</p>
+                    </div>
+                </div>
+                <!--<div class="row">
+                <div class="col-5">
+                    <h6>Policy Name</h6>
+                </div>
+                <div class="col-1">
+                    <span>:</span>
+                </div>
+                <div class="col-6">
+                    <p>{{policy.productName}}</p>
+                </div>
+            </div>-->
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Premium Amount</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>&#8377;{{indianRupeeFormat(customerPolicyDetails.premiumAmount)}}</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Start Date</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>{{customerPolicyDetails.startDate}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Expired Date</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>{{customerPolicyDetails.endDate}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Installment Type</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>{{customerPolicyDetails.paymentFrequency}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Total Amount Paid</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>&#8377;{{indianRupeeFormat(customerPolicyDetails.amountPaid)}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Policy ID</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>{{customerPolicyDetails.orderId}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Nominee ID</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>{{nominee.nomineeID}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <h6>Customer ID</h6>
+                    </div>
+                    <div class="col-1">
+                        <span>:</span>
+                    </div>
+                    <div class="col-6">
+                        <p>{{user.userId}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" [useExistingCss]="true" printSectionId="printable" ngxPrint>Print Invoice</button>
+        </div>
+</ng-template>

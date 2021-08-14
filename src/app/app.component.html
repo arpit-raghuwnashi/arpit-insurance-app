@@ -1,0 +1,17 @@
+<router-outlet></router-outlet>
+
+<button id="openMsgModal" [hidden]="true" type="button" data-toggle="modal" data-target="#modalTrigger">
+	Opens Message
+</button>
+
+<div class="modal fade" id="modalTrigger" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p>{{modalbody}}</p>
+			</div>
+			<button type="button" class="btn btn-sm btn-round btn-outline-info ml-auto mr-4"
+				data-dismiss="modal">{{modalfooter}}</button>
+		</div>
+	</div>
+</div>

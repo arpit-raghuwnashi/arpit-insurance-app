@@ -1,0 +1,133 @@
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    background-color:#39C0ED;
+    color: aliceblue !important;
+}
+.active-link{
+    color: #212521;
+}
+a.dropdown-item{
+    color: aliceblue !important;
+}
+a.dropdown-item:hover{
+    color: #212521 !important;
+}
+.sign-section a{
+    color: aliceblue;
+}
+.sign-section a:hover{
+  color: #ffffff;
+}
+.dropdown-profile-menu.dropdown-menu{
+    background-color:#51cbce !important;
+}
+.dropdown-change-hover:hover{
+    background-color: aliceblue;
+    color: #51cbce;
+}
+ .dropdown-menu::after{
+    visibility: hidden;
+}
+.dropdown-menu::before{
+    visibility: hidden;
+}
+/*
+.navbar-nav.dropdown-menu:after{
+    left: 12px !important;
+}*/
+/*header for big screen */
+@media screen and (min-width: 992px){
+.sign-section {
+    margin-right:3rem;
+    }
+}
+@media screen and (max-width: 992px) and (min-width:700px){
+    .sign-section {
+        margin-right:2rem;
+        }
+    }
+@media screen and (max-width: 699px) and (min-width:550px){
+    .sign-section {
+        margin-right:0.5rem;
+        }
+    }
+@media screen and (max-width: 785px) {
+    .sign_in{
+        padding-right: 8px;
+    }
+    .sign_up{
+        vertical-align: middle;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sign-section{
+        margin-right: 8px;
+    }
+}
+/*user-profile icon*/
+
+/*for user icon user */
+
+.user-profile-icon{
+    font-size: 30px;
+}
+i.user-profile-icon{
+    padding:4px
+}
+
+/*for user name css*/
+
+a.user-profile-name{
+    margin-bottom: 0px;
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+}
+a.user-profile-name:hover{
+    font-weight: bold;
+}
+
+/*to align the toggle button to center*/
+
+.dropdown-toggle::after{
+    align-self: center;
+}
+
+.error-message{
+    color: red;
+}
+
+.modal-header h4{
+    margin-top: 0;
+}
+.registration-form-row{
+    padding: 10px;
+}
+.modal-body { 
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+.gender-single{
+    padding-left: 10px !important;
+    padding-right: 10px;
+}
+.radio-gender{
+    padding-left: 35px;
+}
+/*
+
+a.dropdown-change-hover:hover{
+    background-color:#007bff;
+    color: aliceblue;
+}
+*/
+@media only screen and (min-width: 786px){
+    .sign_in{
+        padding-right: 10px;
+    }
+    .sign-section{
+        padding-right: 2em;
+    }
+}
+.owl_slider{
+    height:75vh;
+}

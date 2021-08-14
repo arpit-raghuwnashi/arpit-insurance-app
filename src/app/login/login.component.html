@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="container-fluid navbar-margin-check">
+  <div class="row no-gutter">
+    <!--for first half background image-->
+    <div class="col-md-6 d-none d-md-flex bg-image-login"></div>
+
+    <!--for the login content part-->
+    <div class="col-md-6 bg-light">
+      <div class="login d-md-flex align-items-center justify-content-center py-5">
+
+        <form (ngSubmit)="loginUser()">
+          <div class="form-group mb-3">
+            <div *ngIf="errorMessage" class="mb-3">
+              <span class="alert-danger p-2">{{errorMessage}}</span>
+            </div>
+
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <input type="email" class="form-control rounded-pill border-8 shadow-sm px-4" #username="ngModel"
+              pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              [class.is-invalid]="username.invalid && username.touched" placeholder="Enter Email Address" required=""
+              autofocus="" name="username" [(ngModel)]="credentials.username">
+            <small class="error-message" [class.invisible]="username.valid || username.untouched">* Please Enter Valid
+              Email</small>
+          </div>
+          <div class="form-group mb-3">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <input type="password" class="form-control rounded-pill border-8 shadow-sm px-4 text-primary"
+              #password="ngModel" [class.is-invalid]="password.invalid && password.touched" placeholder="Enter Password"
+              required="" name="password" [(ngModel)]="credentials.password">
+            <small class="error-message" [class.invisible]="password.valid || password.untouched">* Please Enter Valid
+              Password</small>
+          </div>
+
+          <div class="custom-control custom-checkbox mb-3">
+            <input id="customCheck1" type="checkbox" name="remember" class="custom-control-input">
+            <label for="customCheck1" class="custom-control-label">Remember Me</label>
+          </div>
+          <div class="text-center d-flex justify-content-between mb-3">
+            <a routerLink="/forgetPass" routerLinkActive="active">Forget Password ?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">sign
+            in</button>
+          <div class="text-center d-flex justify-content-between mt-4">
+            <p class="register_link_button">Not Registered Yet?
+              <a routerLink="/register-component" routerLinkActive="active" class="font-static text-muted">Register</a>
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

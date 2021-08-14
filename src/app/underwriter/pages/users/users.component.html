@@ -1,0 +1,275 @@
+<br>
+
+<!-- Displaying Customers -->
+<div class="col-md-13">
+	<div class="card shadow-lg">
+		<div class="card-header">
+			<h4 class="card-title">Customers</h4>
+		</div>
+
+		<div class="card-body">
+			<div class="table-responsive table-hover">
+				<table class="table">
+					<thead class="text-primary text-center">
+						<!-- <th>Sr.No.</th> -->
+						<th>User Id</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email Id</th>
+						<th>Date Of Birth</th>
+						<th>Phone Number</th>
+						<th>Aadhaar Number</th>
+						<th>No. of Policies Purchased</th>
+						<th>Action</th>
+					</thead>
+
+					<tbody>
+						<tr style="text-align: center;"
+							*ngFor="let customer of customers | slice: (page - 1) * pageSize:page * pageSize; index as i">
+							<!-- <th style="text-align: center;">{{ (page - 1) * pageSize + i + 1 }}</th> -->
+
+							<td>{{ customer.userId }}</td>
+							<td>{{ customer.firstName }}</td>
+							<td>{{ customer.lastName }}</td>
+							<td>{{ customer.email }}</td>
+							<td>{{ customer.dateOfBirth}}</td>
+							<td>{{ customer.phoneNo }}</td>
+							<td>{{ customer.aadharNo }}</td>
+							<td>{{ customer.policyCount }}</td>
+
+							<td>
+								<button type="button" (click)="fetchCustomerPolicyDetails(customer)"
+									class="btn btn-sm btn-round btn-outline-primary" data-toggle="modal" data-target="#OrderDetails">
+									Order Details
+								</button>
+
+								<div class="modal" id="OrderDetails">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content shadow-lg">
+											<div class="modal-header">
+												<h4 class="modal-title">Policies Subscribed</h4>
+												<button type="button" class="close" data-dismiss="modal">
+													&times;
+												</button>
+											</div>
+
+											<div class="card-body">
+												<div class="table-hover table-responsive">
+													<table class="table">
+														<thead class="text-primary text-center">
+															<th>OrderId</th>
+															<th>Start Date</th>
+															<th>End Date</th>
+															<th>Number of Dependents</th>
+															<th>Premium Amount</th>
+															<th>Amount Paid</th>
+															<th>Payment Frequency</th>
+															<th>Status</th>
+															<th>Product Id</th>
+															<th>Policy Id</th>
+															<th>Dependents</th>
+															<th>Nominee</th>
+															<th>More</th>
+														</thead>
+
+														<tbody>
+															<tr style="text-align: center;" *ngFor="let policy of policyDetails">
+																<td>{{ policy.orderId }}</td>
+																<td>{{ policy.startDate }}</td>
+																<td>{{ policy.endDate }}</td>
+																<td>{{ policy.numberOfDependent }}</td>
+																<td>&#8377;{{indianRupeeFormat(policy.premiumAmount)}}</td> 
+																<td>&#8377;{{indianRupeeFormat(policy.amountPaid)}}</td>
+																<td>{{ policy.paymentFrequency }}</td>
+																<td>{{ policy.status }}</td>
+																<td>{{ policy.productId }}</td>
+																<td>{{ policy.policyId }}</td>
+																<td>
+																	<button type="button" (click)="fetchDependents(policy)"
+																		class="btn btn-primary btn-round" data-toggle="modal" data-target="#dependents">
+																		Dependents
+																	</button>
+
+																	<!-- The Modal -->
+																	<div class="modal" id="dependents">
+																		<div class="modal-dialog modal-lg" style="position: absolute;
+																								left: 50%;
+																								top: 50%;
+																								transform: translate(-50%, -50%);">
+																			<div class="modal-content">
+																				<!-- Modal Header -->
+																				<div class="modal-header">
+																					<h4 class="modal-title">Dependents</h4>
+																					<button type="button" class="close" data-dismiss="modal">
+																						&times;
+																					</button>
+																				</div>
+
+																				<!-- Modal body -->
+																				<div class="card-body">
+																					<div class="table-hover table-responsive">
+																						<table class="table">
+																							<thead class="text-primary text-center">
+																								<th>Dependent Id</th>
+																								<th>First Name</th>
+																								<th>Middle Name</th>
+																								<th>Last Name</th>
+																								<th>Age</th>
+																								<th>Gender</th>
+																								<th>User Id</th>
+																							</thead>
+
+																							<tbody>
+																								<tr style="text-align: center;" *ngFor="let dependent of dependents">
+																									<td>{{ dependent.depenedentId }}</td>
+																									<td>{{ dependent.firstName }}</td>
+																									<td>{{ dependent.middleName }}</td>
+																									<td>{{ dependent.lastName }}</td>
+																									<td>{{ dependent.age }}</td>
+																									<td>{{ dependent.gender }}</td>
+																									<td>{{ dependent.userId }}</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</div>
+																				</div>
+
+																				<!-- Modal footer -->
+																				<div class="modal-footer">
+																					<button type="button" class="btn btn-danger btn-round" data-dismiss="modal">
+																						Close
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+
+																<td>
+																	<button type="button" (click)="fetchNominee(policy)" class="btn btn-primary btn-round"
+																		data-toggle="modal" data-target="#nominee">
+																		Nominee
+																	</button>
+
+																	<div class="modal" id="nominee">
+																		<div class="modal-dialog modal-lg" style="position: absolute;
+																								left: 50%;
+																								top: 50%;
+																								transform: translate(-50%, -50%);">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h4 class="modal-title">Nominee</h4>
+																					<button type="button" class="close" data-dismiss="modal">
+																						&times;
+																					</button>
+																				</div>
+
+																				<div class="card-body">
+																					<table class="table table-hover table-responsive">
+																						<thead class="text-primary text-center">
+																							<th>Nominee Id</th>
+																							<th>First Name</th>
+																							<th>Last Name</th>
+																							<th>Email</th>
+																							<th>Phone</th>
+																							<th>User Id</th>
+																						</thead>
+																						<tbody *ngFor="let nominee of nominees">
+																							<td style="text-align: center;">{{ nominee.nomineeID }}</td>
+																							<td style="text-align: center;">{{ nominee.firstName }}</td>
+																							<td style="text-align: center;">{{ nominee.lastName }}</td>
+																							<td style="text-align: center;">{{ nominee.email }}</td>
+																							<td style="text-align: center;">{{ nominee.phone }}</td>
+																							<td style="text-align: center;">{{ nominee.userId }}</td>
+																						</tbody>
+																					</table>
+																				</div>
+
+																				<div class="modal-footer">
+																					<button type="button" class="btn btn-danger btn-round" data-dismiss="modal">
+																						Close
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+
+																<td>
+																	<button type="button" (click)="fetchP(policy)" class="btn btn-primary btn-round"
+																		data-toggle="modal" data-target="#more">
+																		More
+																	</button>
+
+																	<!-- The Modal -->
+																	<div class="modal" id="more">
+																		<div class="modal-dialog modal-md" style="position: absolute;
+																								left: 50%;
+																								top: 50%;
+																								transform: translate(-50%, -50%);">
+																			<div class="modal-content">
+																				<!-- Modal Header -->
+																				<div class="modal-header">
+																					<h4 class="modal-title">
+																						More Details
+																					</h4>
+																					<button type="button" class="close" data-dismiss="modal">
+																						&times;
+																					</button>
+																				</div>
+
+																				<!-- Modal body -->
+																				<div class="card-body">
+																					<table class="table table-hover table-responsive">
+																						<thead class="text-primary text-center">
+																							<th>Product Name</th>
+																							<th>Years Covered</th>
+																							<th>Product Description</th>
+																							<th>Sum Assured</th>
+																						</thead>
+																						<tbody *ngFor="let product of products">
+																							<tr style="text-align: center;">
+																								<td>{{product.productName}}</td>
+																								<td>{{product.numberOfYearsCovered}}</td>
+																								<td>{{product.productDescription}}</td>
+																								<td>&#8377;{{indianRupeeFormat(product.sumAssured)}}</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</div>
+
+																				<!-- Modal footer -->
+																				<div class="modal-footer">
+																					<button type="button" class="btn btn-danger btn-round btn-sm"
+																						data-dismiss="modal">
+																						Close
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-round btn-danger" data-dismiss="modal">
+													Close
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [boundaryLinks]="true"
+	[pageSize]="pageSize" class="d-flex justify-content-center"></ngb-pagination>

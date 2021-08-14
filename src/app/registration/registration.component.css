@@ -1,0 +1,33 @@
+.register,
+.image{
+    min-height: 100vh;
+}
+.register-background-img{
+    background-image: url(assets/images/insurance1.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.registration-form-row{
+    padding: 10px;
+}
+.register-button{
+    padding: 10px;
+}
+.sign_in_link a{
+    color: #007bff;
+}
+.sign_in_link{
+    padding: 10px;
+}
+.navbar-margin-check{
+    margin-top: -20px;
+}
+/*Validation */
+.is-invalid{
+    border-color: 2px firebrick ;
+}
+.error-message{
+    color: red;
+}
+

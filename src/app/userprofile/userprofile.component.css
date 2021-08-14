@@ -1,0 +1,42 @@
+/*for user icon user */
+
+.user-profile-icon{
+    font-size: 30px;
+}
+i.user-profile-icon{
+    padding:4px
+}
+.reviewPolicy-header{
+    background-color: #51cbce;
+}
+.reviewPolicy-header h4{
+    margin-top: 10px;
+  }
+  .reviewPolicy-header button:focus{
+    outline: none;
+  }
+  
+/*for user name css*/
+
+/*a.user-profile-name{
+    margin-bottom: 0px;
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+}
+a.user-profile-name:hover{
+    font-weight: bold;
+}
+*/
+/*to align the toggle button to center*/
+/*
+.dropdown-toggle::after{
+    align-self: center;
+}
+/*
+/*
+
+a.dropdown-change-hover:hover{
+    background-color:#007bff;
+    color: aliceblue;
+}*/

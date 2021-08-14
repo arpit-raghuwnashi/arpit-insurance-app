@@ -1,0 +1,276 @@
+<app-header></app-header>
+<div class="container-fluid navbar-margin-check">
+  <div class="row no-gutter">
+    <!--half page background-->
+    <div class="col-md-6 d-none d-md-flex register-background-img"></div>
+
+    <!--registration form-->
+    <div class="col-md-6 bg-light">
+      <div class="register d-md-flex align-items-center justify-content-center py-5">
+        <form action="" #regform="ngForm" [mustMatch]="['password', 'confirmPassword']">
+          <div *ngIf="step == 1">
+            <h4>User Details</h4>
+            <div class="form-row registration-form-row">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control rounded-pill border-8 shadow-sm px-4" #firstName="ngModel"
+                pattern="^[a-zA-z]*$" [class.is-invalid]="firstName.invalid && firstName.touched"
+                [(ngModel)]="user.firstName" id="InputEmail1" aria-describedby="emailHelp" name="firstName"
+                placeholder="First Name" required>
+
+              <small class="error-message" [class.invisible]="firstName.valid || firstName.untouched">* Please Enter
+                Valid Firstname</small>
+              <!--<span class="error_form" id="fname_error_message"></span>-->
+            </div>
+            <div class="form-row registration-form-row">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control rounded-pill border-8 shadow-sm px-4" #lastName="ngModel"
+                pattern="^[a-zA-z]*$" [class.is-invalid]="lastName.invalid && lastName.touched" name="lastName"
+                [(ngModel)]="user.lastName" id="InputPassword1" placeholder="Last Name" required>
+
+              <small class="error-message" [class.invisible]="lastName.valid || lastName.untouched">* Please Enter Valid
+                Lastname</small>
+              <!--<span class="error_form" id="lname_error_message"></span>-->
+            </div>
+            <div class="form-row registration-form-row">
+              <div class="form-check form-check-inline">
+                Gender :
+              </div>
+              <div class="form-group" [class.is-invalid]="gender.invalid && gender.touched">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" [(ngModel)]="user.gender" name="gender" value="Male"
+                    #gender="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" [(ngModel)]="user.gender" name="gender" id="inlineRadio2"
+                    value="Female" #gender="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" [(ngModel)]="user.gender" name="gender" id="inlineRadio3"
+                    value="Other" #gender="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio3">Other</label>
+                </div>
+              </div>
+              <small *ngIf="gender.invalid && gender.touched"><span class="error-message">* Gender required.</span>
+              </small>
+            </div>
+            <div class="form-row registration-form-row">
+              <label for="dateOfBirth">Date of Birth</label>
+              <input id="dateOfBirth" name="dateOfBirth" #dateOfBirth="ngModel"
+                [class.is-invalid]="dateOfBirth.invalid && dateOfBirth.touched" placeholder="mm/dd/yyyy" type="date"
+                class="form-control rounded-pill border-8 shadow-sm px-4" [(ngModel)]="user.dateOfBirth" required>
+              <small class="error-message" [class.invisible]="dateOfBirth.valid || dateOfBirth.untouched">* Please
+                Select your ate of Birth</small>
+            </div>
+            <div class="form-row registration-form-row">
+              <label for="dateOfBirth">Aadhar Number</label>
+              <input id="aadhar_no" name="aadharNumber" #aadharNumber="ngModel" pattern="^\d{12}$" type="number"
+                placeholder="Aadhar Number" [class.is-invalid]="aadharNumber.invalid && aadharNumber.touched"
+                class="form-control rounded-pill border-8 shadow-sm px-4" [(ngModel)]="user.aadharNo" required>
+
+              <small class="error-message" [class.invisible]="aadharNumber.valid || aadharNumber.untouched">* Please
+                Enter Valid Aadhar Number</small>
+            </div>
+
+            <div class="form-row registration-form-row">
+              <label for="dateOfBirth">Annual Income</label>
+              <input id="income" name="income" #income="ngModel" pattern="^[0-9]{5,12}$" type="number"
+                placeholder="Annual Income" [class.is-invalid]="income.invalid && income.touched"
+                class="form-control rounded-pill border-8 shadow-sm px-4" [(ngModel)]="user.annualIncome" required>
+
+              <small class="error-message" [class.invisible]="income.valid || income.untouched">* Please Enter Your
+                Annual Income</small>
+            </div>
+            <div class="form-row registration-form-row">
+              <label for="education">Education</label>
+              <select class="form-control rounded-pill border-8 shadow-sm px-4" name="education" #education="ngModel"
+                [class.is-invalid]="education.invalid && education.touched" [(ngModel)]="user.education" required>
+                <option hidden value="" disabled selected>Select only one</option>
+                <option value="ssc">SSC</option>
+                <option value="hsc">HSC</option>
+                <option value="graduation">Graduation</option>
+                <option value="post graduation">Post Graduation</option>
+              </select>
+
+              <small class="error-message" [class.invisible]="education.valid || education.untouched">* Please Select
+                your educational qualification</small>
+            </div>
+            <div class="form-row registration-form-row">
+              <label for="dateOfBirth">Occupation</label>
+              <input id="income" name="occupation" #occupation="ngModel" pattern="^[a-zA-z]*$" type="text"
+                placeholder="Occupation" [class.is-invalid]="occupation.invalid && occupation.touched"
+                class="form-control rounded-pill border-8 shadow-sm px-4" [(ngModel)]="user.occupation" required>
+
+              <small class="error-message" [class.invisible]="occupation.valid || occupation.untouched">* Please Enter
+                Your Occupation</small>
+            </div>
+          </div>
+
+
+
+          <div *ngIf="step == 2">
+
+            <h4>Contact Details</h4>
+            <div class="form-row registration-form-row">
+              <label for="InputEmail1">Email</label>
+              <input type="text" class="form-control rounded-pill border-8 shadow-sm px-4" [(ngModel)]="user.email"
+                id="email" aria-describedby="emailHelp" name="email" placeholder="Email" #email="ngModel"
+                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [class.is-invalid]="email.invalid && email.touched"
+                required autofocus>
+              <small class="error-message" [class.invisible]="email.valid || email.untouched">* Please Enter Valid
+                Email</small>
+            </div>
+
+            <div class="form-row registration-form-row">
+              <label for="InputContact">Contact Number</label>
+              <input type="number" class="form-control rounded-pill border-8 shadow-sm px-4" [(ngModel)]="user.phoneNo"
+                id="InputContact" placeholder="Contact Number" name="phoneNumber" #phoneNumber="ngModel"
+                pattern="^\d{10}$" [class.is-invalid]="phoneNumber.invalid && phoneNumber.touched" required>
+              <small class="error-message" [class.invisible]="phoneNumber.valid || phoneNumber.untouched">* Please Enter
+                Valid Contact Number</small>
+
+            </div>
+
+            <div class="form-row registration-form-row">
+              <label for="InputAddress">Address</label>
+              <textarea class="form-control rounded-pill border-8 shadow-sm px-4" [(ngModel)]="user.address"
+                id="InputAddress" name="address" placeholder="Address" #address="ngModel"
+                [class.is-invalid]="address.invalid && address.touched" required></textarea>
+              <small class="error-message" [class.invisible]="address.valid || address.untouched">* Please Enter Your
+                Address</small>
+
+            </div>
+          </div>
+
+
+
+          <div *ngIf="step == 3">
+            <h4>Health Details</h4>
+
+            <div class="form-row registration-form-row">
+              <div class="col-5">
+                <div class="form-check form-check-inline">
+                  Diabetes :
+                </div>
+              </div>
+              <div class="col-1">
+                <p>:</p>
+              </div>
+              <div class="col-6">
+                <div class="form-group" [class.is-invalid]="ifDiabetic.invalid && ifDiabetic.touched">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" name="ifDiabetic" type="radio" [(ngModel)]="user.ifDiabetic"
+                    id="inlineRadio1" value="true" #ifDiabetic="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="if_diabetic" [(ngModel)]="user.ifDiabetic"
+                    id="inlineRadio2" value="false" #ifDiabetic="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+                <small *ngIf="ifDiabetic.invalid && ifDiabetic.touched"><span class="error-message">Response required.</span> </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row registration-form-row">
+              <div class="col-5">
+                <div class="form-check form-check-inline">
+                  Smoking 
+                </div>
+              </div>
+              <div class="col-1">
+                <p>:</p>
+              </div>
+              <div class="col-6">
+                <div class="form-group" [class.is-invalid]="ifSmoker.invalid && ifSmoker.touched">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="ifSmoker" [(ngModel)]="user.ifSmoker"
+                    id="inlineRadio1" value="true" #ifSmoker="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="if_smoker" [(ngModel)]="user.ifSmoker"
+                    id="inlineRadio2" value="false" #ifSmoker="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+                <small *ngIf="ifSmoker.invalid && ifSmoker.touched"><span class="error-message">Response required.</span> </small>
+              </div>
+              </div>
+            </div>
+
+            <div class="form-row registration-form-row">
+              <div class="col-5">
+                <div class="form-check form-check-inline">
+                  Blood Pressure
+                </div>
+              </div>
+              <div class="col-1">
+                <p>:</p>
+              </div>
+              <div class="col-6">
+                <div class="form-group" [class.is-invalid]="hasBp.invalid && hasBp.touched">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" [(ngModel)]="user.hasBp" name="hasBp" id="inlineRadio1"
+                    value="true" #hasBp="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" [(ngModel)]="user.hasBp" name="has_bp" id="inlineRadio2"
+                    value="false" #hasBp="ngModel" required>
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+                <small *ngIf="hasBp.invalid && hasBp.touched"><span class="error-message">Response required.</span> </small>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="step == 4">
+
+            <div class="form-row form-group registration-form-row">
+              <label for="password">New Password :</label>
+              <input type="password" class="form-control rounded-pill border-8 shadow-sm px-4"
+                [(ngModel)]="user.password" placeholder="Password" name="password" #password="ngModel"
+                [ngClass]="{ 'is-invalid': regform.submitted && password.invalid && password.touched}" required
+                minlength="6">
+              <div *ngIf="regform.submitted && password.invalid && password.touched" class="invalid-feedback">
+                <div *ngIf="password.errors.required">Password is required</div>
+                <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+              </div>
+              <!--<small class="error-message" [class.invisible]="password.valid || password.untouched">* Please Enter Valid Password</small>-->
+            </div>
+
+            <div class="form-row form-group registration-form-row">
+              <label for="confirmPassword">Confirm Password :</label>
+              <input type="password" class="form-control rounded-pill border-8 shadow-sm px-4"
+                [(ngModel)]="user.confirmPassword" placeholder="Confirm Password" name="confirmPassword"
+                #confirmPassword="ngModel"
+                [ngClass]="{ 'is-invalid': regform.submitted && confirmPassword.invalid && confirmPassword.touched}"
+                required>
+              <!--<small class="error-message" [class.invisible]="confirmPassword.valid || confirmPassword.untouched">* Please Enter Valid Password</small>-->
+              <div *ngIf="regform.submitted && confirmPassword.invalid && confirmPassword.touched"
+                class="invalid-feedback">
+                <div *ngIf="confirmPassword.errors.required">Confirm Password is required</div>
+                <div *ngIf="confirmPassword.errors.mustMatch">Passwords must match</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="register-button">
+            <a class="btn btn-primary rounded-pill shadow-sm mx-2" *ngIf="step != 1" (click)="previous()">Previous</a>
+            <button type="submit" (click)="next()" class="btn btn-primary rounded-pill shadow-sm mx-2"
+              *ngIf="step != 4">Next</button>
+            <button type="submit" (click)="submitApplication()" class="btn btn-primary rounded-pill shadow-sm mx-2"
+              *ngIf="step == 4" [disabled]="regform.form.invalid">Submit</button>
+            <p class="sign_in_link"> Already Registered ? <a routerLink="/login-component" routerLinkActive="active">
+                Sign In </a></p>
+          </div>
+          <br>
+          <!--<pre>{{multistep.value | json}}</pre>-->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

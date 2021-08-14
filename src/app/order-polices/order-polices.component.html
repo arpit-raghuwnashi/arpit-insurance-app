@@ -1,0 +1,159 @@
+<app-header></app-header>
+<body>
+	<div class="page-content">
+		<div class="form-v5-content">
+			<form class="form-detail" action="#" method="post" #policydependent="ngForm">
+				<div *ngIf="step==1">
+					<h2>Policy Details Form</h2>
+					<div class="row">
+						<div class="col-12">
+							<div class="container" [class.show]="show">
+								<p>Rules :</p>
+								<ul>
+									<li>Age Should be Greater then {{minAgeLimit}}</li>
+									<li>Age Should be Less Than {{maxAgeLimit}}</li>
+									<li>Maximum Number of Dependents Should be {{maxNumOfDependent}}</li>
+									<li>Minimum Number of Dependents Should be {{minNumOfDependent}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col-12 float-right">
+							<a class="seeMore" (click)="show = !show">{{ show ? 'Show less': 'Show More' }}</a>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="col-6">
+						<label for="full-name">Number Of Dependent :</label>
+						<i class="fa fa-user"></i>
+						<input type="Number" name="numberOfDependent" class="form-control rounded-pill border-8 shadow-sm px-4"  onkeypress="return event.charCode >= 48" min="0" placeholder="Number Of Dependent" (change)="calculatePremium()" [(ngModel)]="numberOfDependent" required>
+
+						</div>
+					
+						<div class="col-6">
+						<label for="paymentFrequency">Payment Frequency :</label>
+						<select name="paymentFrequency" class="form-control rounded-pill border-8 shadow-sm px-4" (change)="calculatePremium()" [(ngModel)]="paymentFrequency" required>
+							<option value="null" disabled >Select Payment Frequency</option>
+							<option value="Monthly">Monthly</option>
+							<option value="Quaterly">Quaterly</option>
+							<option value="HalfYearly">Half Yearly</option>
+							<option value="Yearly">Yearly</option>
+						</select>
+						</div>
+					</div>
+					<br>
+					<div class="form-row mb-4">
+						<label for="your-email">Premium Amount :</label>
+						<i class="fa fa-inr" aria-hidden="true"></i>
+						<input type="Number" name="premium" id="premium" class="form-control rounded-pill border-8 shadow-sm px-4" placeholder="Yuur Premium Amount" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" [(value)]="premium" readonly>
+						
+					</div>
+				</div>
+
+
+				<div *ngIf="step>=numberOfDependent+2">		
+					<h2>Nominee Details</h2>
+					<div class="form-row mb-3">
+						<label for="firstName">First Name :</label>
+						<i class="fa fa-user"></i>
+						<input type="text" name="firstName" class="form-control rounded-pill border-8 shadow-sm px-4" placeholder="First Name" [(ngModel)]="nominee.firstName" #firstName="ngModel" pattern="^[a-zA-z]*$" [class.is-invalid]="firstName.invalid && firstName.touched" required>
+						<small class="error-message" [class.invisible]="firstName.valid || firstName.untouched">* Please Enter your Firstname</small>
+					</div>
+					
+					<div class="form-row mb-3">
+						<label for="lastName">Last Name :</label>
+						<i class="fa fa-user"></i>
+						<input type="text" name="lastName" class="form-control rounded-pill border-8 shadow-sm px-4" placeholder="Last Name" [(ngModel)]="nominee.lastName" #lastName="ngModel" pattern="^[a-zA-z]*$" [class.is-invalid]="lastName.invalid && lastName.touched" required>
+						<small class="error-message" [class.invisible]="lastName.valid || lastName.untouched">* Please Enter your Lastname</small>	
+					</div>
+					<div class="form-row mb-3">
+						<label for="email">Email :</label>
+						<i class="fa fa-envelope"></i>
+						<input type="email" name="email" class="form-control rounded-pill border-8 shadow-sm px-4" placeholder="Email" [(ngModel)]="nominee.email" #email="ngModel" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [class.is-invalid]="email.invalid && email.touched" required>
+						<small class="error-message" [class.invisible]="email.valid || email.untouched">* Please Enter Valid Email Address</small>
+					</div>
+					<div class="form-row mb-3">
+						<label for="phoneNumber">Phone :</label>
+						<i class="fa fa-phone"></i>
+						<input type="number" name="phoneNumber" class="form-control rounded-pill border-8 shadow-sm px-4" placeholder="Phone Number" #phoneNumber="ngModel" pattern="^\d{10}$" [class.is-invalid]="phoneNumber.invalid && phoneNumber.touched" [(ngModel)]="nominee.phone" required>
+						<small class="error-message" [class.invisible]="phoneNumber.valid || phoneNumber.untouched">* Please Enter Valid Phone Number</small>
+					</div>
+				</div>
+			
+				<div *ngIf="step>=2 && step<numberOfDependent+2" [formGroup]="dependentForm">
+						<div *ngFor="let i of [].constructor(numberOfDependent); let j = index;" >
+							<div *ngIf="count==j">
+								<h2>Dependents Details {{j+1}}</h2>
+									<div class="form-row fontAwesome-align reactive_validation">
+										<div class="col-6">
+											<label for="firstName">First Name :</label>
+											<i class="fa fa-user"></i>
+											<input type="text" name="firstName" class="form-control rounded-pill border-8 shadow-sm px-4 mb-3" placeholder="First Name"  formControlName="firstName"  required>
+											<!--<span class="error-message" *ngIf="firstName.invalid || firstName.touched">Enter </span>-->
+										</div>
+									
+										<div class="col-6">
+											<label for="middleName">Middle Name :</label>
+											<i class="fa fa-user"></i>
+											<input type="text" name="middleName" id="middleName" class="form-control rounded-pill border-8 shadow-sm px-4 mb-3" placeholder="Middle Name" formControlName="middleName">
+										</div>
+									</div>
+									<div class="form-row fontAwesome-align reactive_validation">
+										<div class="col-6">
+											<label for="lastName">Last Name :</label>
+											<i class="fa fa-user"></i>
+											<input type="text" name="lastName" id="lastName" class="form-control rounded-pill border-8 shadow-sm px-4 mb-3" placeholder="Last Name" formControlName="lastName" required >
+										</div>
+										<div class="col-6">
+											<label for="age">Age :</label>
+											<input type="number" name="age" id="age" class="form-control rounded-pill border-8 shadow-sm px-4 mb-3" placeholder="Age" formControlName="age" required>
+										</div>
+									</div>
+									<div class="form-row mb-3 reactive_validation">
+										<div class="form-check form-check-inline">
+										  Gender :
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input" type="radio" formControlName="gender" name="gender" id="inlineRadio1" value="Male">
+										  <label class="form-check-label gender-name" for="inlineRadio1">Male</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input" type="radio" formControlName="gender" name="gender" id="inlineRadio2" value="Female">
+										  <label class="form-check-label gender-name" for="inlineRadio2">Female</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input" type="radio" formControlName="gender" name="gender" id="inlineRadio3" value="Other">
+										  <label class="form-check-label gender-name" for="inlineRadio3">Other</label>
+										</div>
+									  </div>	
+									<div class="form-row fontAwesome-align reactive_validation">
+										<div class="col-6">
+											<label for="phone">Phone :</label>
+											<input type="number" name="phone" id="phone" class="form-control rounded-pill border-8 shadow-sm px-4 mb-3" placeholder="Phone" formControlName="phone" required>
+											<i class="fa fa-phone"></i>
+										</div>
+										<div class="col-6">
+											<label for="email">Email :</label>
+											<i class="fa fa-envelope"></i>
+											<input type="text" name="email" id="email" class="form-control rounded-pill border-8 shadow-sm px-4 mb-3" placeholder="Email" formControlName="email" required>
+										</div>
+									</div>
+								
+									<!-- <input type="hidden" name="userId" id="email" class="input-text" placeholder="Email" formControlName="userId"  [value]="user_id" required> -->
+										
+							</div>		
+						</div>
+				</div>	
+				<div class="form-row-last">
+					<input (click)="previous()" type="submit"  class="register" *ngIf="step>1 && step<=numberOfDependent+1" value="Previous" >
+					<input (click)="next()" type="submit"  class="register" *ngIf="step==1" [disabled]="policydependent.form.untouched" value="Next">
+					<input (click)="getFirst()" type="submit"  class="register" *ngIf="step>1 && step<=numberOfDependent+1" value="Next" [disabled]="!dependentForm.valid">
+					<input (click)="cancel()" type="submit"  class="register" *ngIf="step>numberOfDependent+1" value="Cancel">
+					<input (click)="submitApplication()" type="submit" name="register" class="register" *ngIf="step>numberOfDependent+1" value="Submit" [disabled]="policydependent.form.invalid">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>

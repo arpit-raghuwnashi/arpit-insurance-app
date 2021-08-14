@@ -1,0 +1,117 @@
+<app-header></app-header>
+<app-main-slider></app-main-slider>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <h1 class="policy_title">{{policyTitle}}</h1>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center" *ngFor="let policy of policiesData; let i = index;">
+            <div class="card">
+                <img class="card-img-top" src="../../assets/images/insurance1.png" alt="Policy image">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bolder">{{policy.productName | uppercase}}</h5>
+                    <p class="card-text font-weight-bold">&#8377;{{indianRupeeFormat(policy.sumAssured)}}</p>
+                    <p class="card-text">{{policy.productDescription}}</p>
+                    <!--<a class="btn btn-primary" (click)="redirect(policy.productId);" >Buy Policy</a>-->
+                </div>
+                <div>
+                    <a class="btn btn-primary" (click)="redirect(policy.productId,i);" >Buy Policy</a>
+                    <a class="btn btn-primary" (click)="open(previewPolicy,i);" >Conditions</a>
+                </div>
+            </div>
+        </div>
+        <!--<div class="col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center" *ngFor="let policy of policiesData">
+            <div class="card">
+                <h1>{{policy.product_name}}</h1>
+                <p class="price">{{policy.sum_assured}}</p>
+                <p>{{policy.product_description}}</p>
+                <p><button class="policy_button" (click)="redirect(policy.product_id);"> Buy Policy </button></p>
+            </div>
+        </div>-->
+    </div>
+</div>
+<app-footer></app-footer>
+
+
+<ng-template #previewPolicy let-modal>
+    <div class="modal-header condition-header">
+      <h4 class="modal-title font-weight-bold" id="modal-basic-title">{{oneProductData.productName | uppercase}}</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="reviewData">
+          <div class="row">
+            <div class="col-5">
+                <h6>Description</h6>
+            </div>
+            <div class="col-1">
+                <span>:</span>
+            </div>
+            <div class="col-6">   
+                <p>{{oneProductData.productDescription}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+                <h6>Sum Assured</h6>
+            </div>
+            <div class="col-1">
+                <span>:</span>
+            </div>
+            <div class="col-6">   
+                <p>&#8377;{{indianRupeeFormat(oneProductData.sumAssured)}}</p> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+                <h6>Min Age</h6>
+            </div>
+            <div class="col-1">
+                <span>:</span>
+            </div>
+            <div class="col-6">   
+                <p>{{oneProductData.minAgeLimit}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+                <h6>Maximum Age</h6>
+            </div>
+            <div class="col-1">
+                <span>:</span>
+            </div>
+            <div class="col-6">   
+                <p>{{oneProductData.maxAgeLimit}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+                <h6>Minimum Number Of Dependents</h6>
+            </div>
+            <div class="col-1">
+                <span>:</span>
+            </div>
+            <div class="col-6">   
+                <p>{{oneProductData.minNumDependents}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+                <h6>Maximum Number Of Dependents</h6>
+            </div>
+            <div class="col-1">
+                <span>:</span>
+            </div>
+            <div class="col-6">   
+                <p>{{oneProductData.maxNumDependents}}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="modal-footer">   
+    </div>
+</ng-template>

@@ -1,0 +1,584 @@
+<!-- Button To open Add Product Modal -->
+<form>
+	<div class="row">
+		<div class="col-md-8">
+			<button class="btn btn-md btn-outline-primary" (click)="open(content)">
+				Add Product
+			</button>
+		</div>
+
+		<div class="col-md-4" style="margin-top: 10px;">
+			<div class="input-group no-border">
+				<div class="input-group-prepend">
+					<div class="input-group-text">
+						<i class="nc-icon nc-zoom-split"></i>
+					</div>
+				</div>
+				<input class="form-control" type="text" name="searchTerm" (input)="search($event.target.value)"
+					placeholder="Search here..." />
+			</div>
+		</div>
+	</div>
+</form>
+
+<!-- Add Product Modal -->
+<ng-template #content let-modal>
+	<div class="card card-user">
+		<div class="modal-header">
+			<h5 class="modal-title" id="addProductModal">Add Product</h5>
+			<button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<form #addform="ngForm" (ngSubmit)="onSubmit(addform)" ngNativeValidate>
+				<div class="row">
+					<div class="col-md-4 pr-1">
+						<div class="form-group">
+							<label>Policy Type</label>
+							<select type="number" class="form-control" placeholder="Policy Id" name="policyId" ngModel
+								#pid="ngModel" [class.is-invalid]="pid.invalid && pid.touched" required>
+								<option hidden value="" disabled selected>Select</option>
+								<option value="1">Life</option>
+								<option value="2">Dental</option>
+								<option value="3">Dental & Vision</option>
+							</select>
+							<div *ngIf="pid.errors && pid.invalid && pid.touched">
+								<small class="text-danger" *ngIf="pid.errors.required">Policy Type is required*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 px-1">
+						<div class="form-group">
+							<label for="productName">Product Name</label>
+							<input type="text" class="form-control" placeholder="Product Name" name="productName"
+								ngModel #pname="ngModel" [class.is-invalid]="pname.invalid && pname.touched"
+								pattern="[a-zA-Z ]*" required>
+							<div *ngIf="pname.errors && pname.invalid && pname.touched">
+								<small class="text-danger" *ngIf="pname.errors.required">Product Name is
+									required*</small>
+								<small class="text-danger" *ngIf="pname.errors.pattern">Product Name should contain only
+									characters*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 pl-1">
+						<div class="form-group">
+							<label>Sum Assured</label>
+							<input type="number" class="form-control" placeholder="Sum Assured" name="sumAssured"
+								ngModel #psum="ngModel" [class.is-invalid]="psum.invalid && psum.touched"
+								pattern="^[0-9]{4,12}$" required>
+							<div *ngIf="psum.errors && psum.invalid && psum.touched">
+								<small class="text-danger" *ngIf="psum.errors.required">Sum Assured is required*</small>
+								<small class="text-danger" *ngIf="psum.errors.pattern">Please enter Sum in correct
+									format*</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 pr-1">
+						<div class="form-group">
+							<label>Years Covered</label>
+							<input type="number" class="form-control" placeholder="Years Covered"
+								name="numberOfYearsCovered" ngModel #pyears="ngModel"
+								[class.is-invalid]="pyears.invalid && pyears.touched"
+								pattern="^(0?[1-9]|[1-9][0-9]|100)$" required>
+							<div *ngIf="pyears.errors && pyears.invalid && pyears.touched">
+								<small class="text-danger" *ngIf="pyears.errors.required">Years Covered is
+									required*</small>
+								<small class="text-danger" *ngIf="pyears.errors.pattern">Please enter Years in correct
+									format*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 px-1">
+						<div class="form-group">
+							<label>Min Age Limit</label>
+							<input type="number" class="form-control" placeholder="Min Age Limit" name="minAgeLimit"
+								ngModel #pminage="ngModel" [class.is-invalid]="pminage.invalid && pminage.touched"
+								pattern="^(0?[1-9]|[1-9][0-9]|[1][0-9][0-9]|200)$" required>
+							<div *ngIf="pminage.errors && pminage.invalid && pminage.touched">
+								<small class="text-danger" *ngIf="pminage.errors.required">Min age is required*</small>
+								<small class="text-danger" *ngIf="pminage.errors.pattern">Please enter Age in correct
+									range*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 pl-1">
+						<div class="form-group">
+							<label>Max Age Limit</label>
+							<input type="number" class="form-control" placeholder="Max Age Limit" name="maxAgeLimit"
+								ngModel #pmaxage="ngModel" [class.is-invalid]="pmaxage.invalid && pmaxage.touched"
+								pattern="^(0?[1-9]|[1-9][0-9]|[1][0-9][0-9]|200)$" required>
+							<div *ngIf="pmaxage.errors && pmaxage.invalid && pmaxage.touched">
+								<small class="text-danger" *ngIf="pmaxage.errors.required">Max Age is required*</small>
+								<small class="text-danger" *ngIf="pmaxage.errors.pattern">Please enter Age in correct
+									range*</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<div class="form-group">
+							<label>Min Dependents</label>
+							<input type="number" class="form-control" placeholder="Min Dependents"
+								name="minNumDependents" ngModel #pmindep="ngModel"
+								[class.is-invalid]="pmindep.invalid && pmindep.touched" pattern="^[1-9]{1}$" required>
+							<div *ngIf="pmindep.errors && pmindep.invalid && pmindep.touched">
+								<small class="text-danger" *ngIf="pmindep.errors.required">Min Dependents is
+									required*</small>
+								<small class="text-danger" *ngIf="pmindep.errors.pattern">Invalid Value*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="form-group">
+							<label>Max Dependents</label>
+							<input type="number" class="form-control" placeholder="Max Dependents"
+								name="maxNumDependents" ngModel #pmaxdep="ngModel"
+								[class.is-invalid]="pmaxdep.invalid && pmaxdep.touched" pattern="^[1-9]{1}$" required>
+							<div *ngIf="pmaxdep.errors && pmaxdep.invalid && pmaxdep.touched">
+								<small class="text-danger" *ngIf="pmaxdep.errors.required">Max Dependents is
+									required*</small>
+								<small class="text-danger" *ngIf="pmaxdep.errors.pattern">Invalid Value*</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label>Product Desciption</label>
+							<input type="text" class="form-control textarea" placeholder="Product Description Here!"
+								name="productDescription" ngModel #pdesc="ngModel"
+								[class.is-invalid]="pdesc.invalid && pdesc.touched" required>
+							<div *ngIf="pdesc.errors && pdesc.invalid && pdesc.touched">
+								<small class="text-danger" *ngIf="pdesc.errors.required">Description is
+									required*</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="update ml-auto mr-auto">
+						<button type="button" class="btn btn-secondary btn-round" (click)="modal.close('Save click')">
+							Cancel
+						</button>
+
+						<button type="submit" data-dismiss="modal" class="btn btn-primary btn-round"
+							[disabled]="addform.form.invalid">
+							Save
+						</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</ng-template>
+<!-- Add Product Modal Closed-->
+
+<!-- Displaying Particular Product Details  -->
+<ng-template #contentDetails let-modal>
+	<div class="card card-user">
+		<div class="modal-header">
+			<h5 class="card-title" id="productDetailModal">Product Details</h5>
+			<button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="row">
+					<div class="col-md-4 pr-1">
+						<div class="form-group">
+							<label>Policy Id</label>
+							<input id="PID" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="col-md-4 px-1">
+						<div class="form-group">
+							<label>Product Name</label>
+							<input id="PRONAME" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="col-md-4 pl-1">
+						<div class="form-group">
+							<label>Sum Assured</label>
+							<input id="SUMASS" class="form-control" readonly>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-md-5 pr-4">
+						<div class="form-group">
+							<label>Created Date</label>
+							<input id="DATECREATE" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="col-md-5 pr-4">
+						<div class="form-group">
+							<label>Modified Date</label>
+							<input id="MODDATE" class="form-control" readonly>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 pr-1">
+						<div class="form-group">
+							<label>Years Covered</label>
+							<input id="YEARSCOV" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="col-md-4 px-1">
+						<div class="form-group">
+							<label>Min Age Limit</label>
+							<input id="MINAGE" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="col-md-4 pl-1">
+						<div class="form-group">
+							<label>Max Age Limit</label>
+							<input id="MAXAGE" class="form-control" readonly>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<div class="form-group">
+							<label>Min Dependents</label>
+							<input id="MINDEP" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="form-group">
+							<label>Max Dependents</label>
+							<input id="MAXDEP" class="form-control" readonly>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label>Product Desciption</label>
+							<input id="DESC" class="form-control textarea" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="update ml-auto mr-auto">
+						<button type="button" class="btn btn-primary btn-round" (click)="modal.close('Save click')">
+							Close
+						</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</ng-template>
+<!-- Displaying Particular Product Details Over -->
+
+
+<!-- Editing Product -->
+<ng-template #contentEdit let-modal>
+	<div class="card card-user">
+		<div class="modal-header">
+			<h5 class="card-title" id="editProductModal">Update Product</h5>
+			<button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<form #editProductForm="ngForm" [formGroup]="editForm" ngNativeValidate>
+				<div class="row">
+					<div class="col-md-4 pr-1">
+						<div class="form-group">
+							<label for="policyId">Policy Type</label>
+							<select type="number" class="form-control" formControlName="policyId" required>
+								<option hidden value="" disabled selected>Select</option>
+								<option value="1">Life</option>
+								<option value="2">Dental</option>
+								<option value="3">Dental & Vision</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4 px-1">
+						<div class="form-group">
+							<label for="productName">Product Name</label>
+							<input
+								[class.is-invalid]="editForm.get('productName').invalid && editForm.get('productName').touched"
+								type="text" class="form-control" formControlName="productName" pattern="[a-zA-Z ]*"
+								required>
+							<!-- <small [class.d-none]="editForm.get('productName').valid && editForm.get('productName').untouched" class="text-danger">Product Name is required</small> -->
+							<div *ngIf="editForm.get('productName').invalid && editForm.get('productName').touched">
+								<small *ngIf="editForm.get('productName').errors?.required" class="text-danger"> Product
+									Name is
+									required*</small>
+								<small *ngIf="editForm.get('productName').errors?.pattern" class="text-danger">Product
+									Name should
+									contain only
+									characters*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 pl-1">
+						<div class="form-group">
+							<label for="sumAssured">Sum Assured</label>
+							<input
+								[class.is-invalid]="editForm.get('sumAssured').invalid && editForm.get('sumAssured').touched"
+								type="number" class="form-control" formControlName="sumAssured" pattern="^[0-9]{4,12}$"
+								required>
+							<div *ngIf="editForm.get('sumAssured').invalid && editForm.get('sumAssured').touched">
+								<small *ngIf="editForm.get('sumAssured').errors?.required" class="text-danger"> Sum
+									Assured is
+									required*</small>
+								<small *ngIf="editForm.get('sumAssured').errors?.pattern" class="text-danger"> Please
+									enter Sum in
+									correct format*</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 pr-1">
+						<div class="form-group">
+							<label for="numberOfYearsCovered">Years Covered</label>
+							<input
+								[class.is-invalid]="editForm.get('numberOfYearsCovered').invalid && editForm.get('numberOfYearsCovered').touched"
+								type="number" class="form-control" formControlName="numberOfYearsCovered"
+								pattern="^(0?[1-9]|[1-9][0-9]|100)$" required>
+							<div
+								*ngIf="editForm.get('numberOfYearsCovered').invalid && editForm.get('numberOfYearsCovered').touched">
+								<small *ngIf="editForm.get('numberOfYearsCovered').errors?.required"
+									class="text-danger"> Years Covered
+									is required*</small>
+								<small *ngIf="editForm.get('numberOfYearsCovered').errors?.pattern" class="text-danger">
+									Please enter
+									Years in correct format*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 px-1">
+						<div class="form-group">
+							<label for="minAgeLimit">Min Age Limit</label>
+							<input
+								[class.is-invalid]="editForm.get('minAgeLimit').invalid && editForm.get('minAgeLimit').touched"
+								type="number" class="form-control" formControlName="minAgeLimit"
+								pattern="^(0?[1-9]|[1-9][0-9]|[1][0-9][0-9]|200)$" required>
+							<div *ngIf="editForm.get('minAgeLimit').invalid && editForm.get('minAgeLimit').touched">
+								<small *ngIf="editForm.get('minAgeLimit').errors?.required" class="text-danger"> Min Age
+									Limit is
+									required*</small>
+								<small *ngIf="editForm.get('minAgeLimit').errors?.pattern" class="text-danger"> Please
+									enter Years in
+									correct range*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 pl-1">
+						<div class="form-group">
+							<label for="maxAgeLimit">Max Age Limit</label>
+							<input
+								[class.is-invalid]="editForm.get('maxAgeLimit').invalid && editForm.get('maxAgeLimit').touched"
+								type="number" class="form-control" formControlName="maxAgeLimit"
+								pattern="^(0?[1-9]|[1-9][0-9]|[1][0-9][0-9]|200)$" required>
+							<div *ngIf="editForm.get('maxAgeLimit').invalid && editForm.get('maxAgeLimit').touched">
+								<small *ngIf="editForm.get('maxAgeLimit').errors?.required" class="text-danger"> Max Age
+									Limit is
+									required*</small>
+								<small *ngIf="editForm.get('maxAgeLimit').errors?.required" class="text-danger"> Please
+									enter Years in
+									correct range*</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<div class="form-group">
+							<label for="minNumDependents">Min Dependents</label>
+							<input
+								[class.is-invalid]="editForm.get('minNumDependents').invalid && editForm.get('minNumDependents').touched"
+								type="number" class="form-control" formControlName="minNumDependents"
+								pattern="^[1-9]{1}$" required>
+							<div
+								*ngIf="editForm.get('minNumDependents').invalid && editForm.get('minNumDependents').touched">
+								<small *ngIf="editForm.get('minNumDependents').errors?.required" class="text-danger">
+									Field is
+									required*</small>
+								<small *ngIf="editForm.get('minNumDependents').errors?.pattern" class="text-danger">
+									Invalid
+									value*</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="form-group">
+							<label for="maxNumDependents">Max Dependents</label>
+							<input
+								[class.is-invalid]="editForm.get('maxNumDependents').invalid && editForm.get('maxNumDependents').touched"
+								type="number" class="form-control" formControlName="maxNumDependents"
+								pattern="^[1-9]{1}$" required>
+							<div
+								*ngIf="editForm.get('maxNumDependents').invalid && editForm.get('maxNumDependents').touched">
+								<small *ngIf="editForm.get('maxNumDependents').errors?.required" class="text-danger">
+									Field is
+									required</small>
+								<small *ngIf="editForm.get('maxNumDependents').errors?.pattern" class="text-danger">
+									Invalid
+									value*</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="productDescription">Product Desciption</label>
+							<input
+								[class.is-invalid]="editForm.get('productDescription').invalid && editForm.get('productDescription').touched"
+								type="text" class="form-control textarea" formControlName="productDescription" required>
+							<div
+								*ngIf="editForm.get('productDescription').invalid && editForm.get('productDescription').touched">
+								<small *ngIf="editForm.get('productDescription').errors?.required" class="text-danger">
+									Description is
+									required</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="update ml-auto mr-auto">
+						<button type="submit" data-dismiss="modal" [disabled]="editProductForm.form.invalid"
+							class="btn btn-primary btn-round" (click)="onSave()">
+							Save
+						</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</ng-template>
+<!-- Editing Product Over -->
+
+<!-- Delete Product -->
+<ng-template #contentDelete let-modal>
+	<div class="card card-user">
+		<div class="modal-header">
+			<h5 class="card-title">Confirm Delete</h5>
+			<button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
+		<div class="modal-body">
+			<h5>Are you sure you want to delete this record?</h5>
+			<div class="text-center">
+				<button data-dismiss="modal" class="btn btn-danger btn-round" (click)="onDelete()">Yes, Delete!</button>
+
+				<button type="button" class="btn btn-secondary btn-round" (click)="modal.close('Save click')">
+					Cancel
+				</button>
+			</div>
+		</div>
+	</div>
+</ng-template>
+
+<!-- Displaying Products Table -->
+<div class="col-md-13">
+	<div class="card shadow-lg">
+		<div class="card-header">
+			<h4 class="card-title">Products</h4>
+		</div>
+		<div class="card-body">
+			<div class="table-responsive table-hover">
+				<table class="table">
+					<thead class=" text-primary text-center">
+						<th>
+							Action
+						</th>
+						<th>
+							Product Id
+						</th>
+						<th>
+							Policy Id
+						</th>
+						<th>
+							Name
+						</th>
+						<th>
+							Sum Assured
+						</th>
+						<th>
+							Years Covered
+						</th>
+						<th>
+							Min Age Limit
+						</th>
+						<th>
+							Max Age Limit
+						</th>
+						<th>
+							Created Date
+						</th>
+						<th>
+							Modified Date
+						</th>
+						<th>
+							Min Dependents
+						</th>
+						<th>
+							Max Dependents
+						</th>
+						<th>
+							Description
+						</th>
+					</thead>
+					<tbody>
+						<tr *ngFor="let product of products">
+							<td>
+								<button style="margin: 2px;" class="btn btn-sm btn-info"
+									(click)="openDetails(contentDetails, product)">
+									<i class="fa fa-search"></i></button>
+								<button style="margin: 2px;" class="btn btn-sm btn-warning"
+									(click)="openEdit(contentEdit, product)">
+									<i class="fa fa-edit"></i></button>
+								<button style="margin: 2px;" class="btn btn-sm btn-danger"
+									(click)="openDelete(contentDelete, product)">
+									<i class="fa fa-remove"></i></button>
+							</td>
+							<td style="text-align: center;">{{product.productId}}</td>
+							<td style="text-align: center;">{{product.policyId}}</td>
+							<td style="text-align: center;">{{product.productName}}</td>
+							<td style="text-align: center;">&#8377;{{indianRupeeFormat(product.sumAssured)}}</td>  
+							<td style="text-align: center;">{{product.numberOfYearsCovered}}</td>
+							<td style="text-align: center;">{{product.minAgeLimit}}</td>
+							<td style="text-align: center;">{{product.maxAgeLimit}}</td>
+							<td style="text-align: center;">{{product.createdDate}}</td>
+							<td style="text-align: center;">{{product.modifiedDate}}</td>
+							<td style="text-align: center;">{{product.minNumDependents}}</td>
+							<td style="text-align: center;">{{product.maxNumDependents}}</td>
+							<td style="text-align: center;">{{product.productDescription}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Displaying Products Table Over -->

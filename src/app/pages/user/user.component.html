@@ -1,0 +1,237 @@
+<br>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card card-user">
+      <div class="image">
+        <img src="assets/img/adminbg.png" alt="...">
+      </div>
+      <div class="card-body">
+        <div class="author">
+
+          <img class="avatar border-gray" src="assets/img/administrator.png" alt="...">
+          <h5 class="title text-info">{{admin?.firstName}} {{admin?.lastName}}</h5>
+
+          <p class="description">
+            @admin
+          </p>
+        </div>
+        <p class="description text-center">
+          "Team work makes the dream work"
+        </p>
+      </div>
+
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Team Members</h4>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled team-members">
+          <li>
+            <div class="row">
+              <div class="col-md-2 col-2">
+                <div class="avatar">
+                  <img src="assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image"
+                    class="img-circle img-no-padding img-responsive">
+                </div>
+              </div>
+              <div class="col-md-7 col-7">
+                Arpit Singh
+                <br />
+                <span class="text-muted">
+                  <small>Underwriter</small>
+                </span>
+              </div>
+              <div class="col-md-3 col-3 text-right">
+                <button class="btn btn-sm btn-outline-success btn-round btn-icon"><i
+                    class="fa fa-envelope"></i></button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-2 col-2">
+                <div class="avatar">
+                  <img src="assets/img/faces/joe-gardner-2.jpg" alt="Circle Image"
+                    class="img-circle img-no-padding img-responsive">
+                </div>
+              </div>
+              <div class="col-md-7 col-7">
+                Kunal Sharma
+                <br />
+                <span class="text-success">
+                  <small>User</small>
+                </span>
+              </div>
+              <div class="col-md-3 col-3 text-right">
+                <button class="btn btn-sm btn-outline-success btn-round btn-icon"><i
+                    class="fa fa-envelope"></i></button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-2 col-2">
+                <div class="avatar">
+                  <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image"
+                    class="img-circle img-no-padding img-responsive">
+                </div>
+              </div>
+              <div class="col-ms-7 col-7">
+                Mukul Pratap
+                <br />
+                <span class="text-info">
+                  <small>User</small>
+                </span>
+              </div>
+              <div class="col-md-3 col-3 text-right">
+                <button class="btn btn-sm btn-outline-success btn-round btn-icon"><i
+                    class="fa fa-envelope"></i></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <div class="card card-user">
+      <div class="card-header">
+        <h5 class="card-title">Edit Profile</h5>
+      </div>
+      <div class="card-body">
+        <form #editAdmin="ngForm" novalidate>
+          <div class="row">
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>Company</label>
+                <input type="text" class="form-control" placeholder="Company" value="Group-B Inc." readonly>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Aadhar No.</label>
+                <input type="number" class="form-control" [(ngModel)]="admin && admin.aadharNo" name="aadharNo" readonly>
+              </div>
+            </div>
+            <div class="col-md-4 pl-1">
+              <div class="form-group">
+                <label>Occupation</label>
+                <input type="text" class="form-control" [(ngModel)]="admin && admin.occupation" name="occupation" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" [(ngModel)]="admin && admin.firstName" name="firstName"
+                #fn="ngModel" required pattern="[a-zA-Z ]*" [class.is-invalid]="fn.invalid && fn.touched">
+                <div *ngIf="fn.errors && fn.invalid && fn.touched">
+									<small class="text-danger" *ngIf="fn.errors.required">First Name is required*</small>
+									<small class="text-danger" *ngIf="fn.errors.pattern">First Name should contain only characters*</small>
+								</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" [(ngModel)]="admin && admin.lastName" name="lastName"
+                #ln="ngModel"  pattern="[a-zA-Z ]*" [class.is-invalid]="ln.invalid && ln.touched" required>
+                <div *ngIf="ln.errors && ln.invalid && ln.touched">
+									<small class="text-danger" *ngIf="ln.errors.required">Last Name is required*</small>
+									<small class="text-danger" *ngIf="ln.errors.pattern">Last Name should contain only characters*</small>
+								</div>
+              </div>
+            </div>
+            <div class="col-md-4 pl-1">
+              <div class="form-group">
+                <label>Phone number</label>
+                <input type="tel" class="form-control" [(ngModel)]="admin && admin.phoneNo" name="phoneNo"
+                #phone="ngModel" pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched" required>
+                <div *ngIf="phone.errors && phone.invalid && phone.touched">
+									<small class="text-danger" *ngIf="phone.errors.required">Phone number is
+										required*</small>
+									<small class="text-danger" *ngIf="phone.errors.pattern">Phone number must be min
+										10 digits*</small>
+								</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>Date Of Birth</label>
+                <input type="date" class="form-control" [(ngModel)]="admin && admin.dateOfBirth" name="dateOfBirth"
+                #dob="ngModel" required>
+                <div>
+									<small class="text-danger" [class.d-none]="dob.valid || dob.untouched">This field is
+										required*</small>
+								</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Annual Income</label>
+                <input type="number" class="form-control" [(ngModel)]="admin && admin.annualIncome" name="annualIncome"
+                #income="ngModel" [class.is-invalid]="income.invalid && income.touched" pattern="^[0-9]{5,12}$" required>
+                <div *ngIf="income.errors && income.invalid && income.touched">
+									<small class="text-danger" *ngIf="income.errors.required">Income is required*</small>
+                  <small class="text-danger" *ngIf="income.errors.pattern">Please enter Annual Income*</small>
+								</div>
+              </div>
+            </div>
+
+            <div class="col-md-4 pl-1">
+              <div class="form-group">
+                <label>Education</label>
+                <select class="form-control" [(ngModel)]="admin && admin.education" name="education"
+                 #edu="ngModel" required>
+                 <option>Post Graduation</option> 
+									<option>Graduation</option>
+									<option>Intermediate</option>
+									<option>Other</option>
+                </select>
+                <div>
+									<small class="text-danger" [class.d-none]="
+                            edu.valid || edu.untouched
+                          ">This field is required*</small>
+								</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-7 pr-1">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" [(ngModel)]="admin && admin.email" readonly name="email"
+								 #email = "ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+								 [class.is-invalid]="email.invalid && email.touched" required>
+								 <div *ngIf="email.errors && email.invalid && email.touched">
+									<small class="text-danger" *ngIf="email.errors.required">Email is required*</small>
+									<small class="text-danger" *ngIf="email.errors.pattern">Email should be in a correct
+										format*</small>
+								</div>
+								
+                <input type="hidden" class="form-control" [(ngModel)]="admin && admin.roleId" name="roleId">
+                <input type="hidden" class="form-control" [(ngModel)]="admin && admin.status" name="status">
+                <input type="hidden" class="form-control" [(ngModel)]="admin && admin.userId"  name="userId">
+                <input type="hidden" class="form-control" [(ngModel)]="admin && admin.password"  name="password">
+                <input type="hidden" class="form-control" [(ngModel)]="admin && admin.gender" name="gender" >
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" (click)="editAdminData(editAdmin.value)" [disabled]="editAdmin.form.invalid" class="btn btn-primary btn-round">Update
+                Profile</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+<div class="row pt-3">
+  <div class="col-lg-4 col-md-6 col-sm-6 ">
+    <div class="card card-stats">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <div class="icon-big text-center icon-warning">
+              <i class="nc-icon nc-globe text-success"></i>
+            </div>
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Total Policies</p>
+              <p class="card-title text-primary">{{dashborad?.totalPolices}}</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <hr />
+        <a style="text-decoration: none;" href="http://localhost:4200/admin/dashboard">
+        <div class="stats"><i class="fa fa-refresh"></i> Update Now</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 ">
+    <div class="card card-stats">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <div class="icon-big text-center icon-warning">
+              <i class="fa fa-users text-info"></i> 
+            </div>
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Users</p>
+              <p class="card-title text-primary">{{dashborad?.totalUsers}}</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <hr />
+        <div class="stats"><i class="fa fa-calendar-o"></i>Last day</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 ">
+    <div class="card card-stats">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <div class="icon-big text-center icon-warning">
+              <i class="fa fa-medkit text-success"></i>
+            </div>
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Type of Policies</p>
+              <p class="card-title text-primary">{{dashborad?.totalTypesOfPolices}}</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <hr />
+        <div class="stats"><i class="fa fa-calendar-o"></i>Available</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-6 ">
+    <div class="card card-stats">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <div class="icon-big text-center icon-warning">
+              <i class="fa fa-exclamation-circle text-warning"></i>
+            </div>
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Pending Polices</p>
+              <p class="card-title text-primary">{{dashborad?.totalPendingPolices}}</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <hr />
+        <a style="text-decoration: none;" href="http://localhost:4200/admin/dashboard">
+        <div class="stats"><i class="fa fa-refresh"></i> Action Required</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-6 ">
+    <div class="card card-stats">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-4 col-md-4">
+            <div class="icon-big text-center icon-warning">
+              <i class="fa fa-medkit text-danger"></i>
+            </div>
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Declined Policies</p>
+              <p class="card-title text-primary">{{dashborad?.totalDeclinePolices}}</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <hr />
+        <div class="stats"><i class="fa fa-calendar-o"></i>See Again</div>
+      </div>
+    </div>
+  </div>
+
+</div>

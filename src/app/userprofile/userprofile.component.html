@@ -1,0 +1,153 @@
+<app-header></app-header>
+<app-main-slider></app-main-slider>
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-12">
+            <h3>Policies Taken</h3>
+        </div>
+    </div>
+    <div class="row mt-3" >
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center" *ngFor="let policy of policyDatas; let i = index;">
+            <div class="card">
+                <img class="card-img-top" src="../../assets/images/insurance1.png" alt="Policy image 1">
+                <div class="card-body">
+                    <h5 class="card-title">{{policy.productName}}</h5>
+                    <p class="card-text"> {{policy.productDescription}}</p>
+                    <a class="btn btn-primary" (click)="open(content,i)" >Review Policy</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <h3>Claims</h3>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center" *ngFor="let policy of policyDatas; let i = index;">
+            <div class="card" *ngIf="policy.claimStatus=='underProcess'">
+                <img class="card-img-top" src="../../assets/images/insurance1.png" alt="Policy image 1">
+                <div class="card-body">
+                    <h5 class="card-title">{{policy.productName}}</h5>
+                    <p class="card-text"> {{policy.productDescription}}</p>
+                    <a class="btn btn-primary" (click)="open(content,i)" >Review Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <h3>Policies Expired</h3>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center" *ngFor="let policy of policyDatas; let i = index;">
+            <div class="card" *ngIf="policy.claimStatus=='Claimed'">
+                <img class="card-img-top" src="../../assets/images/insurance1.png" alt="Policy image 1">
+                <div class="card-body">
+                    <h5 class="card-title">{{policy.productName}}</h5>
+                    <p class="card-text"> {{policy.productDescription}}</p>
+                    <a class="btn btn-primary" (click)="open(content,i)" >Review Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Edit The User Info-->
+
+
+<ng-template #content let-modal>
+    <div class="modal-header reviewPolicy-header">
+      <h4 class="modal-title font-weight-bolder" id="modal-basic-title">{{reviewData.productName | uppercase}}</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="reviewData">
+          <div class="row">
+            <div class="col-6">
+                <h6>Premium Amount</h6>
+            </div>
+            <div class="col-6">   
+                <p>&#8377;{{indianRupeeFormat(reviewData.premiumAmount)}}</p> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+                <h6>Start Date</h6>
+            </div>
+            <div class="col-6">   
+                <p>{{reviewData.startDate}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+                <h6>Expiration Date</h6>
+            </div>
+            <div class="col-6">   
+                <p>{{reviewData.endDate}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+                <h6>Installment Type</h6>
+            </div>
+            <div class="col-6">   
+                <p>{{reviewData.paymentFrequency}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+                <h6>Policy Status</h6>
+            </div>
+            <div class="col-6">   
+                <p>{{reviewData.status}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+                <h6>Claim Status</h6>
+            </div>
+            <div class="col-6">   
+                <p>{{reviewData.claimStatus}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+                <h6>Total Amount Paid</h6>
+            </div>
+            <div class="col-6">   
+                <p>&#8377;{{indianRupeeFormat(reviewData.amountPaid)}}</p>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-6">
+                <h6>Due Amount</h6>
+            </div>
+            <div class="col-6">   
+                <p>{{reviewData.sumAssured-reviewData.amountPaid}}</p>
+            </div>
+          </div> -->
+
+      </div>
+    </div>
+    <div class="modal-footer">
+        <div *ngIf="reviewData.status=='Approved'">
+            <a class="btn btn-primary"  href="/payment/{{ reviewData.orderId }}">Pay EMI</a>
+        </div>    
+    </div>
+</ng-template>
+  
+  <!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button> -->
+  
+  <!-- <hr> -->
+  
+<app-footer></app-footer>
+
+
+<!--Review policy Modal-->
+
+

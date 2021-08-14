@@ -1,0 +1,70 @@
+<br>
+<!-- Displaying Products Table -->
+<div class="col-md-13">
+	<div class="card shadow-lg">
+		<div class="card-header">
+			<h4 class="card-title">Products</h4>
+		</div>
+		<div class="card-body">
+			<div class="table-responsive table-hover">
+				<table class="table">
+					<thead class=" text-primary text-center">
+						<th>
+							Product Id
+						</th>
+						<th>
+							Policy Id
+						</th>
+						<th>
+							Name
+						</th>
+						<th>
+							Sum Assured
+						</th>
+						<th>
+							Years Covered
+						</th>
+						<th>
+							Min Age Limit
+						</th>
+						<th>
+							Max Age Limit
+						</th>
+						<th>
+							Created Date
+						</th>
+						<th>
+							Modified Date
+						</th>
+						<th>
+							Min Dependents
+						</th>
+						<th>
+							Max Dependents
+						</th>
+						<th>
+							Description
+						</th>
+					</thead>
+					<tbody>
+						<tr *ngFor="let product of productsDetails">
+							<td style="text-align: center;">{{product.productId}}</td>
+							<td style="text-align: center;">{{product.policyId}}</td>
+							<td style="text-align: center;">{{product.productName}}</td>
+							<td style="text-align: center;">&#8377;{{indianRupeeFormat(product.sumAssured)}}</td>
+							<td style="text-align: center;">{{product.numberOfYearsCovered}}</td>
+							<td style="text-align: center;">{{product.minAgeLimit}}</td>
+							<td style="text-align: center;">{{product.maxAgeLimit}}</td>
+							<td style="text-align: center;">{{product.createdDate}}</td>
+							<td style="text-align: center;">{{product.modifiedDate}}</td>
+							<td style="text-align: center;">{{product.minNumDependents}}</td>
+							<td style="text-align: center;">{{product.maxNumDependents}}</td>
+							<td style="text-align: center;">{{product.productDescription}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Displaying Products Table Over -->

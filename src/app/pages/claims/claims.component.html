@@ -1,0 +1,281 @@
+<!-- Search Bar -->
+<form>
+  <div class="row">
+    <div class="col-md-8"></div>
+
+    <div class="col-md-4" style="margin-top: 10px">
+      <div class="input-group no-border">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="nc-icon nc-zoom-split"></i>
+          </div>
+        </div>
+        <input class="form-control" type="text" name="searchTerm" (input)="search($event.target.value)"
+          placeholder="Search here..." />
+      </div>
+    </div>
+  </div>
+</form>
+
+<!-- Displaying Claims -->
+<div class="col-md-13">
+  <div class="card shadow-lg">
+    <div class="card-header">
+      <h4 class="card-title">Claims</h4>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive table-hover">
+        <table class="table">
+          <thead class="text-primary text-center">
+            <!-- <th>Sr.No.</th> -->
+            <th>Claim Id</th>
+            <th>Nominee Name</th>
+            <th>Customer Name</th>
+            <th>User Id</th>
+            <th>Nominee Id</th>
+            <th>Order Id</th>
+            <th>Created Date</th>
+            <th>Modified Date</th>
+            <th>Status</th>
+            <th>Action</th>
+            <th>Order Detail</th>
+
+
+          </thead>
+
+          <tbody>
+            <tr *ngFor="
+                let claim of claims
+                  | slice: (page - 1) * pageSize:page * pageSize;
+                index as i
+              ">
+              <!-- <th style="text-align: center">
+                {{ (page - 1) * pageSize + i + 1 }}
+              </th> -->
+
+              <td style="text-align: center">{{ claim.claimId }}</td>
+              <td style="text-align: center">{{ claim.nomineeName }}</td>
+              <td style="text-align: center">{{ claim.customerName }}</td>
+              <td style="text-align: center">{{ claim.userId }}</td>
+              <td style="text-align: center">{{ claim.nomineeId }}</td>
+              <td style="text-align: center">{{ claim.orderId }}</td>
+              <td style="text-align: center">{{ claim.createdDate }}</td>
+              <td style="text-align: center">{{ claim.modifiedDate }}</td>
+              <td style="text-align: center">{{ claim.claimStatus }}</td>
+              <!-- <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#update"
+                (click)="updateClaim(claim)">
+                Approve
+            </button></td> -->
+              <td>
+                <button *ngIf="claim.claimStatus!='Claimed'" type="button" class="btn btn-round btn-success" data-toggle="modal" data-target="#update"
+                  (click)="updateClaimId(claim)">
+                  Approve
+                </button>
+                <button *ngIf="claim.claimStatus=='Claimed'" type="button" class="btn btn-round btn-info">
+                  Approved
+                </button>
+                <!-- The Modal -->
+                <div class="modal" id="update">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Confirm Approval</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                          &times;
+                        </button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <p>
+                          Are you sure you want to approve this claim?
+                        </p>
+                      </div>
+
+                      <!-- Modal footer-->
+                      <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-round btn-secondary" data-dismiss="modal"
+                          style="margin: 5px">
+                          No, Close
+                        </button>
+
+                        <button id="button" type="button" (click)="updateClaim()" class="btn btn-round btn-success"
+                          data-dismiss="modal" style="margin: 5px">
+                          Yes, Approve!
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <button type="button" (click)="fetchCustomerPolicyDetail(claim)"
+                  class="btn btn-sm btn-round btn-outline-primary" data-toggle="modal" data-target="#OrderDetail">
+                  Order Details
+                </button>
+
+                <div class="modal" id="OrderDetail">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Order Details</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                          &times;
+                        </button>
+                      </div>
+
+                      <div class="modal-body">
+                        <table class="table table-hover table-responsive">
+                          <thead class="text-primary text-center">
+                            <th>Order Id</th>
+                            <th>User Id</th>
+                            <th>Order Date</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Number of Dependents</th>
+                            <th>Premium Amount</th>
+                            <th>Amount Paid</th>
+                            <th>Payment Frequency</th>
+                            <th>Status</th>
+                            <th>Product Id</th>
+                            <th>Policy Id</th>
+                            <th>Product Detail</th>
+                          </thead>
+
+                          <tbody *ngFor="let policy of policyDetail">
+                            <tr>
+                              <td style="text-align: center">
+                                {{ policy.orderId }}
+                              </td>
+                              <td style="text-align: center">
+                                {{ policy.userId }}
+                              </td>
+                              <td style="text-align: center">
+                                {{ policy.orderDate }}
+                              </td>
+                              <td style="text-align: center">
+                                {{ policy.startDate }}
+                              </td>
+                              <td style="text-align: center">
+                                {{ policy.endDate }}
+                              </td>
+                              <td style="text-align: center">
+                                {{ policy.numberOfDependent }}
+                              </td>
+                              <td style="text-align: center">
+                                &#8377;{{indianRupeeFormat(policy.premiumAmount)}}
+                              </td>
+                              <td style="text-align: center">
+                                &#8377;{{indianRupeeFormat(policy.amountPaid)}}
+                              </td>
+                              <td style="text-align: center">
+                                {{ policy.paymentFrequency }}
+                              </td>
+                              <td style="text-align: center">
+                                {{ policy.status }}
+                              </td>
+
+                              <td style="text-align: center">
+                                {{ policy.productId }}
+                              </td>
+                              <td style="text-align: center">
+                                {{ policy.policyId }}
+                              </td>
+
+                              <td>
+                                <button type="button" (click)="fetchP(policy)" class="btn btn-primary"
+                                  data-toggle="modal" data-target="#more">
+                                  Product Detail
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal" id="more">
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <!-- Modal Header -->
+                                      <div class="modal-header">
+                                        <h4 class="modal-title">
+                                          Product
+                                        </h4>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                          &times;
+                                        </button>
+                                      </div>
+
+                                      <!-- Modal body -->
+                                      <div class="modal-body">
+                                        <table class="table table-hover table-responsive">
+                                          <thead>
+                                            <tr>
+                                              <th class="text-primary text-center">
+                                                Product Name
+                                              </th>
+                                              <th class="text-primary text-center">
+                                                Number of Years Covered
+                                              </th>
+                                              <th class="text-primary text-center">
+                                                Product Description
+                                              </th>
+                                              <th class="text-primary text-center">
+                                                Sum Assured
+                                              </th>
+                                            </tr>
+                                          </thead>
+                                          <tbody *ngFor="let product of products">
+                                            <tr>
+                                              <td>
+                                                {{ product.productName }}
+                                              </td>
+                                              <td>
+                                                {{
+                                                product.numberOfYearsCovered
+                                                }}
+                                              </td>
+                                              <td>
+                                                {{ product.productDescription }}
+                                              </td>
+                                              <td style="text-align: center">
+                                                &#8377;{{indianRupeeFormat(product.sumAssured)}}
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+
+                                      <!-- Modal footer -->
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-round btn-secondary" data-dismiss="modal">
+                                          Close
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-round btn-secondary" data-dismiss="modal">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [boundaryLinks]="true"
+  [pageSize]="pageSize" class="d-flex justify-content-center"></ngb-pagination>

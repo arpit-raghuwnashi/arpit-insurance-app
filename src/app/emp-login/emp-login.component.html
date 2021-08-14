@@ -1,0 +1,57 @@
+<!-- Default form login -->
+<app-header></app-header>
+<div class="container mt-5 ">
+    <div class="row">
+        <div class="col-6">
+            <img src="../../assets/images/pexels-pixabay-39284.jpg">
+        </div>
+        <div class="col-6 p-5">
+            <form class=" " #loginForm="ngForm" (ngSubmit)="onLoginSubmit()">
+
+                <p class="h4 mb-4 d-flex justify-content-around">Sign in</p>
+
+                <div *ngIf="errorMessage" class="p-2 alert-danger mb-2">
+                    {{errorMessage}}
+                  </div>
+                <!-- Email -->
+                <div class="mb-4" [class.has-error]="emailControl.invalid && emailControl.touched"
+                    [class.has-success]="emailControl.valid">
+                    <input type="text" id="LoginEmail" required [(ngModel)]="credentials.username" name="username"
+                        class="form-control " placeholder="E-mail" #emailControl="ngModel">
+                    <span class="help-block" style="color: red;"
+                        *ngIf="emailControl.invalid && emailControl.touched">**Email can't be empty </span>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-4 justify-content-left"
+                    [class.has-error]="passwordControl.invalid && passwordControl.touched"
+                    [class.has-success]="passwordControl.valid">
+                    <input type="password" id="LoginPassword" required [(ngModel)]="credentials.password"
+                        name="password" class="form-control " placeholder="Password" #passwordControl="ngModel">
+                    <span class="help-block" style="color: red;"
+                        *ngIf="passwordControl.invalid && passwordControl.touched">**Password can't be empty </span>
+
+                </div>
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <!-- Forgot password -->
+                        <a routerLink="/forgetPass">Forgot password?</a>
+                    </div>
+                </div>
+
+                <!-- Sign in button -->
+                <div class="d-flex justify-content-around">
+                    <button btn color="info" block="true" [disabled]=loginForm.invalid class="btn btn-primary m-4 "
+                        type="submit">Sign in</button>
+                </div>
+                <!-- <p>Not a member?
+                    <a href="">Register</a>
+                </p> -->
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer UI-->
+<app-footer></app-footer>

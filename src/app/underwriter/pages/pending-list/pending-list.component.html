@@ -1,0 +1,106 @@
+<br>
+<div class="col-md-13">
+	<div class="card shadow-lg">
+		<div class="card-header">
+			<h4 class="card-title">Pending Policies</h4>
+		</div>
+
+		<div class="card-body">
+			<div class="table-responsive table-hover">
+				<table class="table">
+					<thead class="text-primary text-center">
+						<th>Order Id</th>
+						<th>Dependent</th>
+						<th>Order Date</th>
+						<th>Start Date</th>
+						<th>End Date</th>
+						<th>Premium Amount</th>
+						<!-- <th>Discount</th> -->
+						<th>Amount Paid</th>
+						<th>Payment Frequency</th>
+						<th>User Id</th>
+						<th>Product Id</th>
+						<th>Action</th>
+					</thead>
+					<tbody>
+						<tr style="text-align: center;" *ngFor="let od of orderDetails">
+							<th>{{od.orderId}}</th>
+							<td>{{od.numberOfDependent}}</td>
+							<td>{{od.orderDate}}</td>
+							<td>{{od.startDate}}</td>
+							<td>{{od.endDate}}</td>
+							<td>&#8377;{{indianRupeeFormat(od.premiumAmount)}}</td>
+							<!-- <td>od.discount</td> -->
+							<td>&#8377;{{indianRupeeFormat(od.amountPaid)}}</td> 
+							<td>{{od.paymentFrequency}}</td>
+							<td>{{od.userId}}</td>
+							<td>{{od.productId}}</td>
+							<td><a style="margin-bottom: 4px;" class="btn btn-round btn-success" data-toggle="modal"
+									(click)="getOrderId(od.orderId)" data-target="#approveRequest">Approve</a>
+								<a class="btn btn-round btn-outline-danger" data-toggle="modal" (click)="getOrderId(od.orderId)"
+									data-target="#declineRequest">Decline</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- While Declining request from underwriter -->
+<!-- Modal -->
+<div class="modal fade" id="declineRequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-danger" id="exampleModalLongTitle" style="font-weight: bold;">Decline Policy
+					Request?</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Do you want to Decline this policy?
+				<div class="bg-light mt-3">
+					<input class="form-control" [(ngModel)]="messsage" name="messsage" type="text" 
+					placeholder="Enter Supporting Message!">
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-round btn-secondary" data-dismiss="modal">No! Close</button>
+				<a class="btn btn-round btn-outline-danger" (click)="updatePolicyStatus('Decline',orderId)">Yes! DECLINE</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--APPROVING Policy request -->
+<div class="modal fade" id="approveRequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-success" id="exampleModalLongTitle" style="font-weight: bold;">Approve
+					Policy Request?</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Do you want to Approve this policy??
+				<div class="bg-light mt-3">
+					<input class="form-control" [(ngModel)]="messsage" name="messsage" type="text"
+						placeholder="Enter Supporting Message!">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-round btn-outline-danger" data-dismiss="modal">No! Close</button>
+				<button type="button" class="btn btn-round btn-success" data-dismiss="modal"
+					(click)="updatePolicyStatus('Approved',orderId)">Yes, Approve It</button>
+			</div>
+		</div>
+	</div>
+</div>
